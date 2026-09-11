@@ -65,10 +65,10 @@ export default function Home() {
 
           <div className="mt-12 grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
             <div className="max-w-3xl animate-fade-in-up">
-              <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-5xl whitespace-nowrap">
+              <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-5xl">
                 Empowering Space EduTech
               </h1>
-              <p className="mt-6 text-lg text-slate-300">
+              <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
                India's Leading Aerospace Edutech Company with Practical, industry-aligned education in space technology, aerospace, AI, robotics and satellite systems led by experts and designed for the next generation of space innovators.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
