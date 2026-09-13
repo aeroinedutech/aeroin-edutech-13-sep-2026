@@ -84,7 +84,7 @@ export default function ProgramDetailPage({ params }: PageProps) {
             fill
             priority
             sizes="100vw"
-            className="object-cover brightness-75"
+            className="object-cover brightness-50"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/85 via-[hsl(222_47%_7%)]/80 to-[hsl(222_47%_7%)]" />
         </div>
