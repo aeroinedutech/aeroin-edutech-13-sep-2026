@@ -61,9 +61,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/70 via-[hsl(222_47%_7%)]/50 to-[hsl(222_47%_7%)]/90" />
 
         {/* Layer 3 — Hero Content */}
-        <div className="relative mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
 
-          <div className="mt-12 grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
             <div className="max-w-3xl animate-fade-in-up">
               <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-5xl">
                 Empowering Space EduTech
@@ -87,8 +87,17 @@ export default function Home() {
 
             <div className="animate-fade-in-up lg:pt-0">
               <div className="mb-4 flex justify-end">
-                <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-black/50 px-4 py-1.5 text-sm font-semibold text-orange-400 backdrop-blur-sm">
-                  ISRO : Registered Space Tutor
+                <div className="flex flex-col items-center rounded-2xl border border-orange-500/30 bg-black/50 px-5 py-3">
+                  <Image
+                    src="/images/isro-logo.png"
+                    alt="ISRO"
+                    width={90}
+                    height={90}
+                    className="object-contain"
+                  />
+                  <span className="mt-1 text-sm font-medium text-orange-400">
+                    Registered Space Tutor
+                  </span>
                 </div>
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/20 bg-black/30 shadow-2xl shadow-blue-950/40">

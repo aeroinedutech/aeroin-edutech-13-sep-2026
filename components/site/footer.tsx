@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Phone, MessageCircle, FlaskConical } from 'lucide-react';
+import { Mail, Phone, MessageCircle, MapPin } from 'lucide-react';
 import {
   PROFESSIONAL_FOOTER_LINKS,
   SCHOOL_FOOTER_LINKS,
@@ -53,6 +53,22 @@ export function Footer() {
               >
                 <MessageCircle className="h-4 w-4" />
                 WhatsApp
+              </a>
+
+              <a
+                href="https://maps.app.goo.gl/gqC77wQVMfURMApt6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2 text-sm text-slate-400 transition-colors hover:text-blue-400"
+              >
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+                <span>
+                  2nd Floor, Kasturi Towers, Pearl Chambers,
+                  <br />
+                  21, Rukmani Nagar, Perumbakkam,
+                  <br />
+                  Tamil Nadu 600100
+                </span>
               </a>
             </div>
           </div>
