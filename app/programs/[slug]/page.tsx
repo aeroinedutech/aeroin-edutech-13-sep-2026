@@ -84,7 +84,7 @@ export default function ProgramDetailPage({ params }: PageProps) {
             fill
             priority
             sizes="100vw"
-            className="object-cover brightness-50"
+            className="object-cover brightness-45"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/85 via-[hsl(222_47%_7%)]/80 to-[hsl(222_47%_7%)]" />
         </div>
@@ -436,6 +436,7 @@ export default function ProgramDetailPage({ params }: PageProps) {
                         </div>
                         <p className="flex items-center text-lg font-extrabold text-white">
                           {formatINR(tier.amount)}
+                          <span className="ml-1 text-xs font-medium text-slate-400">(including GST)</span>
                         </p>
                         <p className="mb-3 text-xs text-slate-400">{tier.learningStructure}</p>
                         <EnrollButton
