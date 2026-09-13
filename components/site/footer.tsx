@@ -27,9 +27,7 @@ export function Footer() {
             <p className="text-sm text-slate-400">
               Learn Space Technology. Build the Future.
             </p>
-            <p className="text-xs text-slate-500">
-              Education division of Aeroin SpaceTech Pvt. Ltd.
-            </p>
+            
             <div className="flex flex-col gap-2 pt-2">
               <a
                 href="mailto:info@aeroinedutech.in"
