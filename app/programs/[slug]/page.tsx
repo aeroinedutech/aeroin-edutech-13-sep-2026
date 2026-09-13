@@ -508,7 +508,15 @@ function InfoPill({ icon, label, value }: { icon: React.ReactNode; label: string
     <div className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 px-4 py-2.5">
       <div className="text-blue-400">{icon}</div>
       <div>
-        <p className="text-xs text-slate-400">{label}</p>
+        <p
+          className="text-xs text-rgba(250, 250, 250, 0.95)"
+          style={{
+            WebkitTextStroke: '0.4px rgba(131, 131, 131, 0.89)',
+            fontWeight: 'bold',
+          }}
+        >
+          {label}
+        </p>
         <p className="text-sm font-semibold text-white">{value}</p>
       </div>
     </div>

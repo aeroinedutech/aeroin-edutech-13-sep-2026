@@ -106,6 +106,9 @@ export function ProgramCard({ program }: ProgramCardProps) {
             <p className="flex items-center font-bold text-white">
               <IndianRupee className="h-3.5 w-3.5" />
               {(program.customPricing?.amount ?? STARTING_FEE).toLocaleString('en-IN')}
+              {!program.customPricing && (
+                <span className="ml-1 text-[10px] font-medium text-slate-400">(including GST)</span>
+              )}
             </p>
           </div>
           <div className="flex gap-2">
