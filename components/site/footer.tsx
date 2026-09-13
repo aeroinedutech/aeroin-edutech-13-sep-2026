@@ -146,7 +146,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-white/10 pt-6 text-center">
           <p className="text-xs text-slate-500">
-            &copy; {new Date().getFullYear()} © 2026 Aeroin EduTech. All rights reserved. | Empowering education through technology.
+            &copy; {new Date().getFullYear()} Aeroin EduTech. All rights reserved. | Empowering education through technology.
           </p>
         </div>
       </div>
