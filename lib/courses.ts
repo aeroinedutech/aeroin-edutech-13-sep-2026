@@ -589,7 +589,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     ],
     certification:
       'Certificate of completion awarded by Aeroin EduTech upon successful project submission.',
-    paymentLink: 'https://rzp.io/rzp/AI-Rovers',
+    paymentLink: 'https://rzp.io/rzp/spacerobo',
   },
   {
     slug: 'orbital-mechanics-mission-design',
