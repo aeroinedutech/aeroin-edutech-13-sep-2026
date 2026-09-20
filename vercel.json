@@ -54,6 +54,11 @@
       "source": "/course/spacecraftdesign",
       "destination": "/programs/spacecraft-design",
       "permanent": true
+    },
+    {
+      "source": "/rocket",
+      "destination": "/..",
+      "permanent": true
     }
 
   ]
