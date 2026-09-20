@@ -14,6 +14,11 @@
       "source": "/course/simulation",
       "destination": "/programs/aerospace-design-simulation",
       "permanent": true
+    },
+    {
+      "source": "https://www.aeroinedutech.in/insights",
+      "destination": "https://www.aeroinedutech.in/",
+      "permanent": true
     }
   ]
 }
