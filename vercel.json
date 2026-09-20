@@ -16,8 +16,8 @@
       "permanent": true
     },
     {
-      "source": "https://www.aeroinedutech.in/insights",
-      "destination": "https://www.aeroinedutech.in/",
+      "source": "/insights",
+      "destination": "/careers",
       "permanent": true
     }
   ]
