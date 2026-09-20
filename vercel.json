@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/course",
+      "destination": "/programs",
+      "permanent": true
+    },
+    {
+      "source": "/course/cubesat",
+      "destination": "/programs/cubesat-technology",
+      "permanent": true
+    },
+    {
+      "source": "/course/simulation",
+      "destination": "/programs/aerospace-design-simulation",
+      "permanent": true
+    }
+  ]
+}
