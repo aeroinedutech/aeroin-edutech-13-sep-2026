@@ -19,6 +19,42 @@
       "source": "/insights",
       "destination": "/careers",
       "permanent": true
+    },
+    {
+      "source": "/termsandcondition",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/course/rocket",
+      "destination": "/programs/rocket-propulsion-cfd",
+      "permanent": true
+    },
+    {
+      "source": "/course/stressanalysis",
+      "destination": "/programs/stress-analysis",
+      "permanent": true
+    },
+    {
+      "source": "/course/spacerobo",
+      "destination": "/programs/space-robotics",
+      "permanent": true
+    },
+    {
+      "source": "/course/orbitalmechanics",
+      "destination": "/programs/orbital-mechanics-mission-design",
+      "permanent": true
+    },
+    {
+      "source": "/refund-policy",
+      "destination": "/refund",
+      "permanent": true
+    },
+    {
+      "source": "/course/spacecraftdesign",
+      "destination": "/programs/spacecraft-design",
+      "permanent": true
     }
+
   ]
 }
