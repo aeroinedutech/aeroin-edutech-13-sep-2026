@@ -76,12 +76,12 @@ export default function SpaceLabPage() {
       <section className="relative flex min-h-[55vh] items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="space_lab_bg.jpg"
+            src="space_lab.png"
             alt="Space technology lab"
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-cover brightness-50"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/80 via-[hsl(222_47%_7%)]/70 to-[hsl(222_47%_7%)]" />
         </div>

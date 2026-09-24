@@ -3,8 +3,9 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { Loader2, CreditCard } from 'lucide-react';
+import { Loader2, CreditCard, MessageCircle } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { whatsappLink } from '@/lib/enquiry';
 
 interface EnrollButtonProps {
   courseId: string;
@@ -16,6 +17,7 @@ interface EnrollButtonProps {
   size?: 'default' | 'lg' | 'sm';
   label?: string;
   paymentLink?: string;
+  isFreeDemo?: boolean;
 }
 
 // Razorpay checkout types
@@ -78,12 +80,19 @@ export function EnrollButton({
   size = 'default',
   label = 'Enroll Now',
   paymentLink,
+  isFreeDemo,
 }: EnrollButtonProps) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   async function handleEnroll() {
+    if (isFreeDemo || amount === 0) {
+      const msg = `Hello Aeroin EduTech Team, I would like to book a free demo session for "${courseName}". Please share the available demo session schedule and details.`;
+      window.open(whatsappLink(msg), '_blank', 'noopener,noreferrer');
+      return;
+    }
+
     if (paymentLink) {
       window.open(paymentLink, '_blank', 'noopener,noreferrer');
       return;
@@ -201,7 +210,11 @@ export function EnrollButton({
           </>
         ) : (
           <>
-            <CreditCard className="mr-2 h-4 w-4" />
+            {isFreeDemo || amount === 0 ? (
+              <MessageCircle className="mr-2 h-4 w-4" />
+            ) : (
+              <CreditCard className="mr-2 h-4 w-4" />
+            )}
             {label}
           </>
         )}

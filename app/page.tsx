@@ -40,6 +40,37 @@ const PATH_ICONS: Record<string, React.ReactNode> = {
   FlaskConical: <FlaskConical className="h-6 w-6" />,
 };
 
+const MOU_INSTITUTIONS = [
+  { name: 'Dr. M.G.R. Educational and Research Institute', src: '/images/partners/image copy 7.png' },
+  { name: 'SNS Institutions', src: '/images/hero/sns.jpg' },
+  { name: 'Hindusthan College of Engineering and Technology', src: '/images/partners/image copy 5.png' },
+  { name: 'Nehru Institute of Information Technology', src: '/images/partners/image-removebg-preview_(4).png' },
+  { name: 'SRM Institute of Science and Technology', src: '/images/hero/SRM.png' },
+];
+
+const UNIVERSITIES_WORKED = [
+  { name: 'Cochin University of Science and Technology', src: '/images/partners/image copy 4.png' },
+  { name: 'SVCE', src: '/images/hero/svg.png' },
+  { name: 'Vellore Institute of Technology', src: '/images/partners/image copy 9.png' },
+  { name: 'Lovely Professional University', src: '/images/partners/image copy 8.png' },
+  { name: 'Chandigarh University', src: '/images/partners/image copy 6.png' },
+  { name: 'Periyar Maniammai Institute', src: '/images/hero/pmu.png' },
+  { name: 'VELS University', src: '/images/hero/vistas.png' },
+  { name: 'Kumaraguru College of Technology', src: '/images/partners/image copy 10.png' },
+  { name: 'Karunya University', src: '/images/hero/karunya.png' },
+  { name: 'Hindustan College Chennai', src: '/images/hero/hindustan.png' },
+  { name: 'Adhiyamaan College of Engineering, Hosur', src: '/images/hero/adhiyaman.png' },
+  { name: 'Rajalakshmi Engineering College', src: '/images/hero/rajalakshmi.png' },
+  { name: 'Dhanalakshmi College', src: '/images/hero/dhanalakshmi.png' },
+];
+
+const SCHOOLS_WORKED = [
+  { name: 'IVL School', src: '/images/hero/ivl.png' },
+  { name: 'ELA Green School', src: '/images/hero/ela green.jpg' },
+  { name: 'RISE Pollachi', src: '/images/hero/rise.jpg' },
+  { name: 'Karur Vidyalaya School', src: '/images/hero/ksv.png' },
+];
+
 export default function Home() {
   return (
     <>
@@ -61,14 +92,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/70 via-[hsl(222_47%_7%)]/50 to-[hsl(222_47%_7%)]/90" />
 
         {/* Layer 3 — Hero Content */}
-        <div className="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+        <div className="relative mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
 
           <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
             <div className="max-w-3xl animate-fade-in-up">
-              <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-5xl">
+              <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-5xl whitespace-nowrap">
                 Empowering Space EduTech
               </h1>
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
+              <p className="mt-6 text-lg text-slate-300">
                India's Leading Aerospace Edutech Company with Practical, industry-aligned education in space technology, aerospace, AI, robotics and satellite systems led by experts and designed for the next generation of space innovators.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -87,18 +118,18 @@ export default function Home() {
 
             <div className="animate-fade-in-up lg:pt-0">
               <div className="mb-4 flex justify-end">
-                <div className="flex flex-col items-center rounded-2xl border border-orange-500/30 bg-black/50 px-5 py-3">
-                  <Image
-                    src="/images/isro-logo.png"
-                    alt="ISRO"
-                    width={90}
-                    height={90}
-                    className="object-contain"
-                  />
-                  <span className="mt-1 text-sm font-medium text-orange-400">
-                    Registered Space Tutor
-                  </span>
-                </div>
+                  <div className="flex flex-col items-center rounded-2xl border border-orange-500/30 bg-black/50 px-5 py-3">
+                    <Image
+                      src="/images/isro-logo.png"
+                      alt="ISRO"
+                      width={90}
+                      height={90}
+                      className="object-contain"
+                    />
+                    <span className="mt-1 text-sm font-medium text-orange-400">
+                      Registered Space Tutor
+                    </span>
+                  </div>
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/20 bg-black/30 shadow-2xl shadow-blue-950/40">
                 <Image
@@ -124,7 +155,7 @@ export default function Home() {
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">Choose Your Learning Path</h2>
             <p className="mt-4 text-slate-400">
-              From a 3-day Masterclass to a 3-month Deep Research Program — find the path that fits your goals.
+              From a 3-day foundation session to a 3-month Deep Research Program — find the path that fits your goals.
             </p>
           </div>
 
@@ -254,7 +285,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {PROFESSIONAL_PROGRAMS.slice(0, 8).map((program) => (
-              <ProgramCard key={program.slug} program={program} />
+              <ProgramCard key={program.slug} program={program} showEnroll={true} />
             ))}
           </div>
         </div>
@@ -299,7 +330,7 @@ export default function Home() {
 
       {/* SCHOOL PROGRAMS */}
       <section className="py-20 bg-[hsl(222_47%_5%)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7.5xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
             <div>
               <div className="mb-2 flex items-center gap-2 text-sm text-emerald-400">
@@ -315,9 +346,9 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <div className="grid grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {SCHOOL_PROGRAMS.map((program) => (
-              <ProgramCard key={program.slug} program={program} />
+              <ProgramCard key={program.slug} program={program} showEnroll={true} />
             ))}
           </div>
         </div>
@@ -357,6 +388,104 @@ export default function Home() {
             <StepCard number="02" icon={<GraduationCap />} title="Select" desc="Choose your program and duration." />
             <StepCard number="03" icon={<ShieldCheck />} title="Pay" desc="Complete secure payment through Razorpay." />
             <StepCard number="04" icon={<Zap />} title="Start Learning" desc="Receive further program instructions through the applicable communication channel." />
+          </div>
+        </div>
+      </section>
+
+      {/* MOU SIGNED */}
+      <section className="py-20 bg-[hsl(222_47%_5%)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
+              <ShieldCheck className="h-4 w-4" /> MoU Signed
+            </div>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Institutions We Have MoUs With</h2>
+            <p className="mt-4 text-slate-400">
+              Formal partnerships with leading institutions for collaborative programs and initiatives.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            {MOU_INSTITUTIONS.map((inst) => (
+              <div
+                key={inst.name}
+                className="group flex min-h-36 items-center justify-center rounded-xl border border-white/10 bg-black/40 p-5 transition-all hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-900/20"
+              >
+                <Image
+                  src={inst.src}
+                  alt={inst.name}
+                  width={200}
+                  height={120}
+                  className="h-20 w-full object-contain opacity-80 transition-all duration-300 group-hover:opacity-100 group-hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* UNIVERSITIES WORKED WITH */}
+      <section className="py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
+              <GraduationCap className="h-4 w-4" /> Universities
+            </div>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Universities We Have Worked With</h2>
+            <p className="mt-4 text-slate-400">
+              Collaborating with leading universities across India for aerospace and space technology programs.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            {UNIVERSITIES_WORKED.map((uni) => (
+              <div
+                key={uni.name}
+                className="group flex min-h-32 items-center justify-center rounded-xl border border-white/10 bg-black/40 p-4 transition-all hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-900/20"
+              >
+                <Image
+                  src={uni.src}
+                  alt={uni.name}
+                  width={160}
+                  height={100}
+                  className="h-16 w-full object-contain opacity-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SCHOOLS WORKED WITH */}
+      <section className="py-20 bg-[hsl(222_47%_5%)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-600/10 px-4 py-1.5 text-sm text-emerald-300">
+              <School className="h-4 w-4" /> Schools
+            </div>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Schools We Have Worked With</h2>
+            <p className="mt-4 text-slate-400">
+              Inspiring young minds through space technology education at schools across India.
+            </p>
+          </div>
+          <div className="mx-auto max-w-6xl">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-4 lg:grid-cols-4">
+              {SCHOOLS_WORKED.map((school) => (
+                <div
+                  key={school.name}
+                  className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 transition-all hover:border-blue-500/40 hover:shadow-lg hover:shadow-blue-900/20"
+                >
+                  <Image
+                    src={school.src}
+                    alt={school.name}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[hsl(222_47%_7%)] via-[hsl(222_47%_7%)]/50 to-transparent">
+                    <p className="p-4 text-sm font-semibold text-white">{school.name}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -429,7 +558,7 @@ function WhyCard({ icon, title, desc }: { icon: React.ReactNode; title: string; 
 function StepCard({ number, icon, title, desc }: { number: string; icon: React.ReactNode; title: string; desc: string }) {
   return (
     <div className="relative rounded-xl border border-white/10 bg-[hsl(222_40%_10%)] p-6">
-      <span className="absolute right-4 top-4 text-3xl font-black text-white-300/20">{number}</span>
+      <span className="absolute right-4 top-4 text-3xl font-black text-white 300/20">{number}</span>
       <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600/15 text-blue-400">
         {icon}
       </div>

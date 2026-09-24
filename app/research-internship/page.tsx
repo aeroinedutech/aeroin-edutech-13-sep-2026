@@ -6,6 +6,7 @@ import { RESEARCH_INTERNSHIP_PHASES, RESEARCH_INTERNSHIP_GAINS, formatINR, PRICI
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { EnrollButton } from '@/components/site/enroll-button';
+import { ResearchPromoPopup } from '@/components/site/research-promo-popup';
 import {
   Rocket,
   ArrowRight,
@@ -67,6 +68,7 @@ const GAIN_ICONS: Record<string, React.ReactNode> = {
 export default function ResearchInternshipPage() {
   return (
     <>
+      <ResearchPromoPopup />
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">

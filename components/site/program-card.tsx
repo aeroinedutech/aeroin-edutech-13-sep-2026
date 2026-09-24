@@ -8,6 +8,7 @@ import { STARTING_FEE, formatINR } from '@/lib/pricing';
 
 interface ProgramCardProps {
   program: Program;
+  showEnroll?: boolean;
 }
 
 function StarRating() {
@@ -23,7 +24,7 @@ function StarRating() {
   );
 }
 
-export function ProgramCard({ program }: ProgramCardProps) {
+export function ProgramCard({ program, showEnroll = true }: ProgramCardProps) {
   const isSchool = program.learnerCategory === 'school';
   const isResearch = program.learnerCategory === 'research';
   const modeLabel = isResearch ? 'Online / Offline' : 'Online';
@@ -107,19 +108,27 @@ export function ProgramCard({ program }: ProgramCardProps) {
               <IndianRupee className="h-3.5 w-3.5" />
               {(program.customPricing?.amount ?? STARTING_FEE).toLocaleString('en-IN')}
               {!program.customPricing && (
-                <span className="ml-1 text-[10px] font-medium text-slate-400">(including GST)</span>
+                <span className="ml-1 text-[10px] font-medium text-slate-400">(inc. GST)</span>
               )}
             </p>
           </div>
           <div className="flex gap-2">
-            <Button asChild variant="outline" size="sm" className="border-white/20 text-slate-200 hover:bg-white/10 hover:text-white">
+            <Button
+              asChild
+              variant="outline"
+              size="sm"
+              className="border-white/20 text-slate-200 hover:bg-white/10 hover:text-white"
+            >
               <Link href={`/programs/${program.slug}`}>View</Link>
             </Button>
-            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-500">
-              <Link href={`/programs/${program.slug}`}>
-                Enroll <ArrowRight className="ml-1 h-3.5 w-3.5" />
-              </Link>
-            </Button>
+
+            {showEnroll && (
+              <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-500">
+                <Link href={`/programs/${program.slug}`}>
+                  Enroll <ArrowRight className="ml-1 h-3.5 w-3.5" />
+                </Link>
+              </Button>
+            )}
           </div>
         </div>
       </div>

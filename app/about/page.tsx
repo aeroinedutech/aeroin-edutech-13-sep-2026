@@ -349,7 +349,7 @@ export default function AboutPage() {
                 key={item.title}
                 className="relative overflow-hidden rounded-xl border border-white/10 bg-[hsl(222_40%_10%)] p-6 transition-all hover:border-blue-500/40 hover:shadow-lg hover:shadow-blue-900/20"
               >
-                <span className="absolute right-4 top-4 text-3xl font-black text-blue-600/20">
+                <span className="absolute right-4 top-4 text-3xl font-black text-white-300/20">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600/15 text-blue-400">
@@ -382,7 +382,7 @@ export default function AboutPage() {
                   <div className="absolute left-full top-12 hidden h-0.5 w-full bg-gradient-to-r from-blue-500/40 to-transparent lg:block" />
                 )}
                 <div className="relative rounded-xl border border-white/10 bg-[hsl(222_40%_10%)] p-6 text-center transition-all hover:border-blue-500/40">
-                  <span className="text-2xl font-black text-blue-600/30">{stage.num}</span>
+                  <span className="text-2xl font-black text-white-300/30">{stage.num}</span>
                   <div className="mx-auto mb-4 mt-2 flex h-14 w-14 items-center justify-center rounded-xl bg-blue-600/15 text-blue-400">
                     {stage.icon}
                   </div>

@@ -84,7 +84,7 @@ export default function ProgramDetailPage({ params }: PageProps) {
             fill
             priority
             sizes="100vw"
-            className="object-cover brightness-50"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/85 via-[hsl(222_47%_7%)]/80 to-[hsl(222_47%_7%)]" />
         </div>
@@ -163,7 +163,8 @@ export default function ProgramDetailPage({ params }: PageProps) {
             ) : (
               <>
                 <InfoPill icon={<Clock className="h-5 w-5" />} label="Duration Options" value="3 Days – 3 Months" />
-                <InfoPill icon={<IndianRupee className="h-5 w-5" />} label="Starting Fee" value={formatINR(STARTING_FEE)} />
+                <InfoPill icon={<GraduationCap className="h-5 w-5" />} label="Starting Fee" value={formatINR(STARTING_FEE)} />
+                <InfoPill icon={<Sparkles className="h-5 w-5" />} label="Free Demo" value="Available" />
                 <InfoPill icon={<Monitor className="h-5 w-5" />} label="Mode" value="Online" />
                 <InfoPill icon={<Layers className="h-5 w-5" />} label="GST" value="Inclusive" />
               </>
@@ -435,8 +436,7 @@ export default function ProgramDetailPage({ params }: PageProps) {
                           )}
                         </div>
                         <p className="flex items-center text-lg font-extrabold text-white">
-                          {formatINR(tier.amount)}
-                          <span className="ml-1 text-xs font-medium text-slate-400">(including GST)</span>
+                          {tier.isFreeDemo ? 'Free' : formatINR(tier.amount)}
                         </p>
                         <p className="mb-3 text-xs text-slate-400">{tier.learningStructure}</p>
                         <EnrollButton
@@ -444,9 +444,10 @@ export default function ProgramDetailPage({ params }: PageProps) {
                           courseName={program.name}
                           duration={tier.duration}
                           amount={tier.paise}
-                          label={`Enroll — ${tier.duration}`}
+                          label={tier.isFreeDemo ? 'Book Free Demo' : `Enroll — ${tier.duration}`}
                           className="w-full"
                           paymentLink={program.paymentLink}
+                          isFreeDemo={tier.isFreeDemo}
                         />
                       </div>
                     ))}
@@ -508,15 +509,7 @@ function InfoPill({ icon, label, value }: { icon: React.ReactNode; label: string
     <div className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 px-4 py-2.5">
       <div className="text-blue-400">{icon}</div>
       <div>
-        <p
-          className="text-xs text-rgba(250, 250, 250, 0.95)"
-          style={{
-            WebkitTextStroke: '0.4px rgba(131, 131, 131, 0.89)',
-            fontWeight: 'bold',
-          }}
-        >
-          {label}
-        </p>
+        <p className="text-xs text-slate-400">{label}</p>
         <p className="text-sm font-semibold text-white">{value}</p>
       </div>
     </div>

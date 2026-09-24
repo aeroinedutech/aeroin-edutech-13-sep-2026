@@ -61,7 +61,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     learnerCategory: 'professional',
     subjectCategories: ['AI & Machine Learning', 'Space Technology'],
     image:
-      'https://images.pexels.com/photos/17483870/pexels-photo-17483870.png?auto=compress&cs=tinysrgb&w=1260',
+      '/images/hero/AI-Powered Space Mission Planning.jpg',
     topics: [
       'Space Mission Lifecycle & ConOps',
       'Orbital Mechanics Fundamentals',

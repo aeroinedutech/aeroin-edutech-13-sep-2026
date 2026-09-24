@@ -9,18 +9,20 @@ export interface PricingTier {
   learningStructure: string;
   focus: string;
   isResearch?: boolean;
+  isFreeDemo?: boolean;
 }
 
 export const PRICING_TIERS: PricingTier[] = [
   {
     id: '3-days',
-    label: '3 Days',
+    label: 'Free Demo',
     duration: '3 Days',
-    amount: 299,
-    paise: 29900,
-    programType: 'Masterclass',
-    learningStructure: 'Theory',
-    focus: 'A short, focused introduction to a specific aerospace or space-technology topic.',
+    amount: 0,
+    paise: 0,
+    programType: 'Free Demo Session',
+    learningStructure: 'Introductory Session',
+    focus: 'A free demo session to experience our teaching methodology before enrolling in a full program.',
+    isFreeDemo: true,
   },
   {
     id: '15-days',
@@ -66,7 +68,7 @@ export const PRICING_TIERS: PricingTier[] = [
   },
 ];
 
-export const STARTING_FEE = 299;
+export const STARTING_FEE = 3539;
 
 export function formatINR(amount: number): string {
   return `₹${amount.toLocaleString('en-IN')}`;
@@ -85,15 +87,15 @@ export interface LearningPath {
 export const LEARNING_PATHS: LearningPath[] = [
   {
     number: '01',
-    label: 'Masterclass',
+    label: 'Free Demo Session',
     duration: '3 Days',
-    structure: 'Theory',
+    structure: 'Introductory Session',
     icon: 'Zap',
-    description: 'Quick, focused technical learning for a specific aerospace or space-technology topic.',
+    description: 'A free demo session to experience our teaching methodology before enrolling in a full program.',
   },
   {
     number: '02',
-    label: 'Foundation Program',
+    label: 'master Program',
     duration: '15 Days',
     structure: 'Theory',
     icon: 'BookOpen',
