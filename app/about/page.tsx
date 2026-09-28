@@ -363,6 +363,42 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ============ GALLERY ============ */}
+      <section className="py-20 bg-[hsl(222_47%_5%)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
+              <Sparkles className="h-4 w-4" /> Gallery
+            </div>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Moments at Aeroin EduTech</h2>
+            <p className="mt-4 text-slate-400">
+              A glimpse into our workshops, boot camps, guest lectures, collaborations, and events.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {GALLERY_IMAGES.map((img) => (
+              <div
+                key={img.src}
+                className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 transition-all hover:border-blue-500/40 hover:shadow-lg hover:shadow-blue-900/20"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[hsl(222_47%_7%)] via-[hsl(222_47%_7%)]/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <p className="p-4 text-sm font-medium text-white">
+                    {img.alt}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ============ LEARNING APPROACH ============ */}
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -481,41 +517,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ============ GALLERY ============ */}
-      <section className="py-20 bg-[hsl(222_47%_5%)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
-              <Sparkles className="h-4 w-4" /> Gallery
-            </div>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Moments at Aeroin EduTech</h2>
-            <p className="mt-4 text-slate-400">
-              A glimpse into our workshops, boot camps, guest lectures, collaborations, and events.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {GALLERY_IMAGES.map((img) => (
-              <div
-                key={img.src}
-                className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 transition-all hover:border-blue-500/40 hover:shadow-lg hover:shadow-blue-900/20"
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[hsl(222_47%_7%)] via-[hsl(222_47%_7%)]/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <p className="p-4 text-sm font-medium text-white">
-                    {img.alt}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ============ INDUSTRY-ACADEMIA CONNECT ============ */}
       <section className="py-20">
