@@ -45,7 +45,9 @@ const MOU_INSTITUTIONS = [
   { name: 'SNS Institutions', src: '/images/hero/sns.jpg' },
   { name: 'Hindusthan College of Engineering and Technology', src: '/images/partners/image copy 5.png' },
   { name: 'Nehru Institute of Information Technology', src: '/images/partners/image-removebg-preview_(4).png' },
-  { name: 'SRM Institute of Science and Technology', src: '/images/hero/SRM.png' },
+  { name: 'SRM Institute of Science and Technology', src: '/images/hero/srm.png' },
+  { name: 'Adhiyamaan College of Engineering, Hosur', src: '/images/hero/adhiyaman.png' },
+  { name: 'indian institute of management technology', src: '/images/hero/iimt.png' },
 ];
 
 const UNIVERSITIES_WORKED = [
@@ -59,9 +61,11 @@ const UNIVERSITIES_WORKED = [
   { name: 'Kumaraguru College of Technology', src: '/images/partners/image copy 10.png' },
   { name: 'Karunya University', src: '/images/hero/karunya.png' },
   { name: 'Hindustan College Chennai', src: '/images/hero/hindustan.png' },
-  { name: 'Adhiyamaan College of Engineering, Hosur', src: '/images/hero/adhiyaman.png' },
+  { name: 'Amritha college', src: '/images/hero/amritha.png' },
+  { name: 'Mahendra college salem', src: '/images/hero/mei.png' },
   { name: 'Rajalakshmi Engineering College', src: '/images/hero/rajalakshmi.png' },
   { name: 'Dhanalakshmi College', src: '/images/hero/dhanalakshmi.png' },
+  { name: 'psg', src: '/images/hero/psg.png' },
 ];
 
 const SCHOOLS_WORKED = [
@@ -96,7 +100,7 @@ export default function Home() {
 
           <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
             <div className="max-w-3xl animate-fade-in-up">
-              <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-5xl whitespace-nowrap">
+              <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-5xl">
                 Empowering Space EduTech
               </h1>
               <p className="mt-6 text-lg text-slate-300">
@@ -399,12 +403,12 @@ export default function Home() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
               <ShieldCheck className="h-4 w-4" /> MoU Signed
             </div>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Institutions We Have MoUs With</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Institutions We Signed MoUs With</h2>
             <p className="mt-4 text-slate-400">
               Formal partnerships with leading institutions for collaborative programs and initiatives.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {MOU_INSTITUTIONS.map((inst) => (
               <div
                 key={inst.name}
@@ -430,12 +434,12 @@ export default function Home() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
               <GraduationCap className="h-4 w-4" /> Universities
             </div>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Universities We Have Worked With</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Universities We Worked With</h2>
             <p className="mt-4 text-slate-400">
               Collaborating with leading universities across India for aerospace and space technology programs.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {UNIVERSITIES_WORKED.map((uni) => (
               <div
                 key={uni.name}
@@ -461,7 +465,7 @@ export default function Home() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-600/10 px-4 py-1.5 text-sm text-emerald-300">
               <School className="h-4 w-4" /> Schools
             </div>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Schools We Have Worked With</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Schools We Worked With</h2>
             <p className="mt-4 text-slate-400">
               Inspiring young minds through space technology education at schools across India.
             </p>
