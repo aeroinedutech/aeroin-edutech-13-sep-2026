@@ -12,8 +12,18 @@ import {
   Users,
   Clock,
   CheckCircle2,
+  Sparkles,
 } from 'lucide-react';
 import { EnquiryButtons } from '@/components/site/enquiry-buttons';
+
+const GALLERY_IMAGES = [
+  { src: '/images/gallery/ida 1.png', alt: 'Ideation workshop brainstorming session' },
+  { src: '/images/gallery/ida 2.jpeg', alt: 'Presenter leading an ideation workshop' },
+  { src: '/images/gallery/ida 3.png', alt: 'Workshop participants in a seminar setting' },
+  { src: '/images/gallery/ida 4.jpg', alt: 'Educator presenting during a workshop' },
+  { src: '/images/gallery/ida 5.jpg', alt: 'Interactive workshop presentation' },
+  { src: '/images/gallery/ida 6.jpg', alt: 'Speaker at an ideation workshop event' },
+];
 
 export const metadata: Metadata = {
   title: 'Ideation Workshops | Aeroin EduTech',
@@ -151,6 +161,40 @@ export default function IdeationWorkshopsPage() {
                   emailSubject={`Enquiry – Ideation Workshop – ${ws.title}`}
                   whatsappMessage={`Hello Aeroin EduTech, I am interested in the Ideation Workshop: ${ws.title}. I would like to know more about the schedule, fees, and registration process.`}
                 />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section className="py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
+              <Sparkles className="h-4 w-4" /> Gallery
+            </div>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Workshop Moments</h2>
+            <p className="mt-4 text-slate-400">
+              Highlights from our ideation workshops and innovation sessions.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {GALLERY_IMAGES.map((img) => (
+              <div
+                key={img.src}
+                className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 transition-all hover:border-blue-500/40 hover:shadow-lg hover:shadow-blue-900/20"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[hsl(222_47%_7%)] via-[hsl(222_47%_7%)]/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <p className="p-4 text-sm font-medium text-white">{img.alt}</p>
+                </div>
               </div>
             ))}
           </div>

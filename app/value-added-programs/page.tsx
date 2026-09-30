@@ -13,8 +13,18 @@ import {
   Wrench,
   Target,
   GraduationCap,
+  Sparkles,
 } from 'lucide-react';
 import { EnquiryButtons } from '@/components/site/enquiry-buttons';
+
+const GALLERY_IMAGES = [
+  { src: '/images/gallery/program highlights 1.jpeg', alt: 'Value Added Programs at VISTAS' },
+  { src: '/images/gallery/program highlights 2.jpeg', alt: 'Value Added Programs on Drone Technology' },
+  { src: '/images/gallery/program highlights 3.jpeg', alt: 'Value Added Programs at VISTAS' },
+  { src: '/images/gallery/program highlights 4.jpeg', alt: 'Value Added Programs at VISTAS' },
+  { src: '/images/gallery/program highlights 5.jpg', alt: 'Value Added Programs at VELS Institution' },
+  { src: '/images/gallery/program highlights 6.jpg', alt: 'Value Added Programs at SVC' },
+];
 
 export const metadata: Metadata = {
   title: 'Value Added Programs | Aeroin EduTech',
@@ -79,7 +89,7 @@ export default function ValueAddedProgramsPage() {
       <section className="relative flex min-h-[55vh] items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="vac_bg.jpg"
+            src="/images/hero/image copy 10.png"
             alt="Value added technical learning"
             fill
             priority
@@ -89,11 +99,11 @@ export default function ValueAddedProgramsPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/80 via-[hsl(222_47%_7%)]/70 to-[hsl(222_47%_7%)]" />
         </div>
         <div className="relative mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-orange-600/30 bg-blue-900/10 px-4 py-1.5 text-sm text-white-300">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-600/30 bg-blue-900/10 px-4 py-1.5 text-sm text-blue-600">
             <BookOpen className="h-4 w-4" /> Value Added Programs
           </div>
           <h1 className="text-4xl font-extrabold text-blue-500 sm:text-5xl">Value Added Programs</h1>
-          <p className="mt-6 max-w-2xl mx-auto text-lg text-white-300">
+          <p className="mt-6 max-w-2xl mx-auto text-lg text-orange-400">
             Specialized short-term technical learning opportunities that complement students&apos;
             academic education with practical exposure to aerospace, space technology, engineering,
             simulation, robotics, UAVs, and emerging technologies.
@@ -154,6 +164,40 @@ export default function ValueAddedProgramsPage() {
                   emailSubject={`Enquiry – Value Added Program – ${vp.title}`}
                   whatsappMessage={`Hello Aeroin EduTech, I am interested in the Value Added Program: ${vp.title}. I would like to know more about the schedule, fees, and registration process.`}
                 />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section className="py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
+              <Sparkles className="h-4 w-4" /> Gallery
+            </div>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Program Highlights</h2>
+            <p className="mt-4 text-slate-400">
+              Practical learning moments from our Value Added Programs.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {GALLERY_IMAGES.map((img) => (
+              <div
+                key={img.src}
+                className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 transition-all hover:border-blue-500/40 hover:shadow-lg hover:shadow-blue-900/20"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[hsl(222_47%_7%)] via-[hsl(222_47%_7%)]/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <p className="p-4 text-sm font-medium text-white">{img.alt}</p>
+                </div>
               </div>
             ))}
           </div>
