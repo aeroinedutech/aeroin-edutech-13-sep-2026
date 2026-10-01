@@ -17,12 +17,12 @@ import {
 import { EnquiryButtons } from '@/components/site/enquiry-buttons';
 
 const GALLERY_IMAGES = [
-  { src: '/images/gallery/ida 1.png', alt: 'Ideation workshop brainstorming session' },
-  { src: '/images/gallery/ida 2.jpeg', alt: 'Presenter leading an ideation workshop' },
-  { src: '/images/gallery/ida 3.png', alt: 'Workshop participants in a seminar setting' },
-  { src: '/images/gallery/ida 4.jpg', alt: 'Educator presenting during a workshop' },
-  { src: '/images/gallery/ida 5.jpg', alt: 'Interactive workshop presentation' },
-  { src: '/images/gallery/ida 6.jpg', alt: 'Speaker at an ideation workshop event' },
+  { src: '/images/gallery/ida 1.png', alt: 'Ideation workshop at MGR University' },
+  { src: '/images/gallery/ida 2.jpeg', alt: 'Guest speaker at Founders x' },
+  { src: '/images/gallery/ida 3.png', alt: 'Ideation workshop at Prathyusha' },
+  { src: '/images/gallery/ida 4.jpg', alt: 'Ideation workshop on rocket propulsion' },
+  { src: '/images/gallery/ida 5.jpg', alt: 'Guest speaker at HR NEXUS' },
+  { src: '/images/gallery/ida 6.jpg', alt: 'Ideation workshop in school' },
 ];
 
 export const metadata: Metadata = {
