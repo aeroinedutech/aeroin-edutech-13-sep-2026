@@ -73,8 +73,8 @@ export default function ResearchInternshipPage() {
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <Image
-            src="research_int_bg.jpg"
-            alt="Planetary surface exploration research"
+            src="https://images.pexels.com/photos/2538107/pexels-photo-2538107.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt=""
             fill
             priority
             sizes="100vw"

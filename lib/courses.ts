@@ -549,7 +549,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     learnerCategory: 'professional',
     subjectCategories: ['Robotics', 'Space Technology'],
     image:
-      'https://images.pexels.com/photos/3913012/pexels-photo-3913012.jpeg?auto=compress&cs=tinysrgb&w=1260',
+      'https://space.site.hw.ac.uk/wp-content/uploads/sites/94/2025/02/Space-robotic.jpg',
     topics: [
       'Introduction to Space Robotics',
       'Robotic Manipulators',
@@ -971,7 +971,7 @@ export const SCHOOL_PROGRAMS: Program[] = [
     learnerCategory: 'school',
     subjectCategories: ['Robotics', 'Space Technology'],
     image:
-      'https://images.pexels.com/photos/9242208/pexels-photo-9242208.jpeg?auto=compress&cs=tinysrgb&w=1260',
+      'https://my.avnet.com/wcm/connect/b6fcca93-8c91-494e-ae37-536dfad131a8/canadarm2-dextre-robotic-hand.jpg?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CVID=oMqkNRj',
     topics: [
       'Introduction to Robots',
       'Space Robots and Rovers',

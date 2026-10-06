@@ -1,6 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Phone, MessageCircle, MapPin } from 'lucide-react';
+import {
+  Mail,
+  Phone,
+  MessageCircle,
+  MapPin,
+  Facebook,
+  Instagram,
+  Linkedin,
+} from 'lucide-react';
 import {
   PROFESSIONAL_FOOTER_LINKS,
   SCHOOL_FOOTER_LINKS,
@@ -44,16 +52,6 @@ export function Footer() {
                 +91 9176209914
               </a>
               <a
-                href="https://wa.me/919176209914"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-slate-400 hover:text-blue-400"
-              >
-                <MessageCircle className="h-4 w-4" />
-                WhatsApp
-              </a>
-
-              <a
                 href="https://maps.app.goo.gl/gqC77wQVMfURMApt6"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -68,6 +66,47 @@ export function Footer() {
                   Tamil Nadu 600100
                 </span>
               </a>
+                <div className="flex items-center gap-3 pt-2">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61569966600554"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-all hover:border-blue-500/40 hover:bg-blue-600/10 hover:text-blue-400"
+                >
+                  <Facebook className="h-4 w-4" />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/aeroin_edutech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-all hover:border-pink-500/40 hover:bg-pink-500/10 hover:text-pink-400"
+                >
+                  <Instagram className="h-4 w-4" />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/aeroin-edutech/?originalSubdomain=in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-all hover:border-blue-500/40 hover:bg-blue-600/10 hover:text-blue-400"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </a>
+
+                <a
+                  href="https://wa.me/919176209914"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-all hover:border-green-500/40 hover:bg-green-500/10 hover:text-green-400"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                </a>
+              </div>
             </div>
           </div>
 

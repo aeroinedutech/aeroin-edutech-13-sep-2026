@@ -16,7 +16,7 @@ export const PRICING_TIERS: PricingTier[] = [
   {
     id: '3-days',
     label: 'Free Demo',
-    duration: '-',
+    duration: '1-on-1 Live Session',
     amount: 0,
     paise: 0,
     programType: 'Free Demo Session',

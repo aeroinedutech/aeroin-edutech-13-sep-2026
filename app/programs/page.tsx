@@ -236,18 +236,21 @@ function ProgramsContent() {
             active={learnerCategory === 'all'}
             onClick={() => updateCategory('all')}
             label="All Programs"
+            activeColor="orange"
           />
           <CategoryTab
             active={learnerCategory === 'professional'}
             onClick={() => updateCategory('professional')}
             label="Professional"
             icon={<Briefcase className="h-4 w-4" />}
+            activeColor="blue"
           />
           <CategoryTab
             active={learnerCategory === 'school'}
             onClick={() => updateCategory('school')}
             label="School"
             icon={<School className="h-4 w-4" />}
+            activeColor="green"
           />
         </div>
       </div>
@@ -339,19 +342,27 @@ function CategoryTab({
   onClick,
   label,
   icon,
+  activeColor,
 }: {
   active: boolean;
   onClick: () => void;
   label: string;
   icon?: React.ReactNode;
+  activeColor: 'orange' | 'blue' | 'green';
 }) {
+  const activeClasses = {
+    orange: 'bg-orange-500 text-white',
+    blue: 'bg-blue-600 text-white',
+    green: 'bg-emerald-500 text-white',
+  };
+
   return (
     <button
       onClick={onClick}
       className={cn(
         'flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition-all',
         active
-          ? 'bg-blue-600 text-white'
+          ? activeClasses[activeColor]
           : 'text-slate-400 hover:text-white'
       )}
     >

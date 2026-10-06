@@ -107,8 +107,8 @@ export default function BootCampsPage() {
       <section className="relative flex min-h-[55vh] items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero/image copy 7.png"
-            alt="Hands-on aerospace boot camp"
+            src="https://images.pexels.com/photos/2538107/pexels-photo-2538107.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt=""
             fill
             priority
             sizes="100vw"

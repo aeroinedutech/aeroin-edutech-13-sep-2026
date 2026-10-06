@@ -436,7 +436,14 @@ export default function ProgramDetailPage({ params }: PageProps) {
                           )}
                         </div>
                         <p className="flex items-center text-lg font-extrabold text-white">
-                          {tier.isFreeDemo ? 'Free' : formatINR(tier.amount)}
+                          {tier.isFreeDemo ? (
+                            <>
+                              <span className="text-slate-500 line-through">₹499</span>
+                              <span>Free</span>
+                            </>
+                          ) : (
+                            formatINR(tier.amount)
+                          )}
                         </p>
                         <p className="mb-3 text-xs text-slate-400">{tier.learningStructure}</p>
                         <EnrollButton

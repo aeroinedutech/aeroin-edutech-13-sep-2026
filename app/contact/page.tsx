@@ -16,6 +16,9 @@ import {
   Loader2,
   CheckCircle2,
   Copy,
+  Facebook,
+  Instagram,
+  Linkedin,
 } from 'lucide-react';
 import { EmailLink } from '@/components/site/email-link';
 
@@ -107,11 +110,47 @@ export default function ContactPage() {
                   label="Email Us"
                   fullWidth
                 />
-                <Button asChild variant="outline" className="border-white/20 text-slate-200 hover:bg-white/10">
-                  <a href="https://wa.me/919176209914" target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
-                  </a>
-                </Button>
+                  <div className="flex w-full gap-3 pt-1">
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61569966600554"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                      className="flex h-11 flex-1 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-all hover:border-blue-500/40 hover:bg-blue-600/10 hover:text-blue-400"
+                    >
+                      <Facebook className="h-5 w-5" />
+                    </a>
+
+                    <a
+                      href="https://www.instagram.com/aeroin_edutech/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                      className="flex h-11 flex-1 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-all hover:border-pink-500/40 hover:bg-pink-500/10 hover:text-pink-400"
+                    >
+                      <Instagram className="h-5 w-5" />
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/company/aeroin-edutech/?originalSubdomain=in"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                      className="flex h-11 flex-1 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-all hover:border-blue-500/40 hover:bg-blue-600/10 hover:text-blue-400"
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </a>
+
+                    <a
+                      href="https://wa.me/919176209914"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="WhatsApp"
+                      className="flex h-11 flex-1 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-all hover:border-green-500/40 hover:bg-green-500/10 hover:text-green-400"
+                    >
+                      <MessageCircle className="h-5 w-5" />
+                    </a>
+                  </div>
               </div>
             </div>
 

@@ -16,9 +16,17 @@ import {
   FlaskConical,
   Building2,
   CheckCircle2,
+  Sparkles,
 } from 'lucide-react';
 import { EnquiryButtons } from '@/components/site/enquiry-buttons';
 import { whatsappLink, emailLink } from '@/lib/enquiry';
+
+const SPACE_LAB_IMAGES = [
+  { src: '/images/gallery/space-lab1.jpeg', alt: 'Space lab electronics workstations', description: 'Modern electronics lab with workstations and technical equipment for hands-on space technology learning' },
+  { src: '/images/gallery/space-lab2.jpeg', alt: 'Space lab with telescopes', description: 'Classroom equipped with telescopes and scientific instruments for space science exploration' },
+  { src: '/images/gallery/space-lab3.jpeg', alt: 'Interactive lab environment', description: 'Interactive laboratory environment for practical aerospace and space technology education' },
+  { src: '/images/gallery/space-lab4.jpeg', alt: 'High-tech engineering lab', description: 'High-tech engineering lab with precision equipment for telescope and satellite component development' },
+];
 
 export const metadata: Metadata = {
   title: 'Space Lab Setup | Aeroin EduTech',
@@ -76,12 +84,12 @@ export default function SpaceLabPage() {
       <section className="relative flex min-h-[55vh] items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="space_lab.png"
+             src="https://images.pexels.com/photos/2538107/pexels-photo-2538107.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Space technology lab"
             fill
             priority
             sizes="100vw"
-            className="object-cover brightness-50"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/80 via-[hsl(222_47%_7%)]/70 to-[hsl(222_47%_7%)]" />
         </div>
@@ -92,7 +100,7 @@ export default function SpaceLabPage() {
           <h1 className="text-4xl font-extrabold text-white-300 sm:text-5xl">
             Build Your Own Space Technology Learning Lab
           </h1>
-          <p className="mt-2 text-xl font-bold text-white -300">Complete Space Lab Solutions for Schools &amp; Colleges</p>
+          <p className="mt-2 text-xl font-bold text-white">Complete Space Lab Solutions for Schools &amp; Colleges</p>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-slate-300">
             Aeroin EduTech provides customized Space Lab setup solutions designed to create practical
             aerospace and space-technology learning environments for educational institutions.
@@ -146,6 +154,49 @@ export default function SpaceLabPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SPACE LAB GALLERY - TABLE FORMAT */}
+      <section className="py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
+              <Sparkles className="h-4 w-4" /> Space Lab Gallery
+            </div>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Space Lab Setup Showcase</h2>
+            <p className="mt-4 text-slate-400">
+              Explore examples of space lab environments and equipment we help institutions set up.
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-white/10">
+            <table className="w-full border-collapse">
+              <tbody>
+                {SPACE_LAB_IMAGES.map((img, i) => (
+                  <tr
+                    key={img.src}
+                    className={`group relative ${i % 2 === 0 ? 'bg-[hsl(222_40%_10%)]' : 'bg-[hsl(222_47%_8%)]'}`}
+                  >
+                    <td className="relative w-1/2 p-0">
+                      <div className="relative aspect-[16/10] overflow-hidden">
+                        <Image
+                          src={img.src}
+                          alt={img.alt}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                      </div>
+                    </td>
+                    <td className="w-1/2 p-6 align-middle">
+                      <h3 className="text-lg font-bold text-white">{img.alt}</h3>
+                      <p className="mt-2 text-sm text-slate-400">{img.description}</p>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

@@ -134,11 +134,11 @@ export default function CareersPage() {
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <Image
-            src="carrier_page _top.jpg"
-            alt="Engineering team collaborating on a technical prototype"
+            src="https://images.pexels.com/photos/2538107/pexels-photo-2538107.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt=""
             fill
             priority
-            sizes="75vw"
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/85 via-[hsl(222_47%_7%)]/80 to-[hsl(222_47%_7%)]" />
@@ -157,7 +157,7 @@ export default function CareersPage() {
             Join Aeroin EduTech and help shape the next generation of aerospace, space
             technology, and STEM professionals.
           </p>
-          <p className="mt-3 max-w-2xl mx-auto text-black-300 sm text-slate-800 animate-fade-in-up">
+          <p className="mt-3 max-w-2xl mx-auto text-black-300 sm text-white animate-fade-in-up">
             Aeroin EduTech is looking for passionate and talented individuals who are
             interested in aerospace education, engineering, space technology, technical
             training, student mentoring, and project development. If you are passionate

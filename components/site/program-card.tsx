@@ -98,8 +98,9 @@ export function ProgramCard({ program, showEnroll = true }: ProgramCardProps) {
             </span>
           ))}
         </div>
-
+            
         <div className="mt-auto flex items-center justify-between border-t border-white/5 pt-3">
+          {/*
           <div>
             <p className="text-[11px] text-slate-500">
               {program.customPricing ? 'Program Fee' : 'Starting from'}
@@ -112,20 +113,28 @@ export function ProgramCard({ program, showEnroll = true }: ProgramCardProps) {
               )}
             </p>
           </div>
-          <div className="flex gap-2">
+          */}
+          <div className="flex w-full gap-2">
             <Button
               asChild
               variant="outline"
               size="sm"
-              className="border-white/20 text-slate-200 hover:bg-white/10 hover:text-white"
+              className="flex-1 border-white/20 text-slate-200 hover:bg-white/10 hover:text-white"
             >
-              <Link href={`/programs/${program.slug}`}>View</Link>
+              <Link href={`/programs/${program.slug}`}>
+                View
+              </Link>
             </Button>
 
             {showEnroll && (
-              <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-500">
+              <Button
+                asChild
+                size="sm"
+                className="flex-1 bg-blue-600 hover:bg-blue-500"
+              >
                 <Link href={`/programs/${program.slug}`}>
-                  Enroll <ArrowRight className="ml-1 h-3.5 w-3.5" />
+                  Enroll
+                  <ArrowRight className="ml-1 h-3.5 w-3.5" />
                 </Link>
               </Button>
             )}
