@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { Menu, X, Rocket, ChevronDown, Briefcase, FlaskConical, Lightbulb, GraduationCap, BookOpen, Building2 } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -18,12 +18,12 @@ const navLinks = [
 ];
 
 const offerLinks = [
-  { href: '/programs', label: 'Programs', icon: <Briefcase className="h-4 w-4" /> },
-  { href: '/boot-camps', label: 'Boot Camps', icon: <Rocket className="h-4 w-4" /> },
-  { href: '/ideation-workshops', label: 'Ideation Workshops', icon: <Lightbulb className="h-4 w-4" /> },
-  { href: '/faculty-development', label: 'Faculty Development Programs', icon: <GraduationCap className="h-4 w-4" /> },
-  { href: '/value-added-programs', label: 'Value Added Programs', icon: <BookOpen className="h-4 w-4" /> },
-  { href: '/space-lab', label: 'Space Lab Setup', icon: <Building2 className="h-4 w-4" /> },
+  { href: '/programs', label: 'Programs' },
+  { href: '/boot-camps', label: 'Boot Camps'},
+  { href: '/ideation-workshops', label: 'Ideation Workshops'},
+  { href: '/faculty-development', label: 'Faculty Development Programs'},
+  { href: '/value-added-programs', label: 'Value Added Programs'},
+  { href: '/space-lab', label: 'Space Lab Setup'},
 ];
 
 export function Navbar() {
@@ -73,13 +73,12 @@ export function Navbar() {
                           key={ol.href}
                           href={ol.href}
                           className={cn(
-                            'flex items-center gap-3 rounded-md px-3 py-2.5 text-sm transition-colors',
+                            'block rounded-md px-3 py-2.5 text-sm transition-colors',
                             pathname === ol.href
                               ? 'bg-blue-600/20 text-blue-400'
                               : 'text-slate-300 hover:bg-white/5 hover:text-white'
                           )}
                         >
-                          <span className="text-blue-400">{ol.icon}</span>
                           {ol.label}
                         </Link>
                       ))}
@@ -133,14 +132,12 @@ export function Navbar() {
                 href={ol.href}
                 onClick={() => setOpen(false)}
                 className={cn(
-                  'flex items-center gap-3 rounded-md px-4 py-2.5 text-sm font-medium transition-colors',
+                  'block rounded-md px-4 py-2.5 text-sm font-medium transition-colors',
                   pathname === ol.href
                     ? 'bg-blue-600/20 text-blue-400'
                     : 'text-slate-300 hover:bg-white/5 hover:text-white'
                 )}
-              >
-                <span className="text-blue-400">{ol.icon}</span>
-                {ol.label}
+              >                {ol.label}
               </Link>
             ))}
             <div className="my-2 border-t border-white/10" />

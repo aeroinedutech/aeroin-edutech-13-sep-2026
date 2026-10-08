@@ -226,9 +226,6 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/80 via-[hsl(222_47%_7%)]/60 to-[hsl(222_47%_7%)]" />
         </div>
         <div className="relative mx-auto w-full max-w-5xl px-4 py-20 text-center sm:px-6 lg:px-8">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300 animate-fade-in-up">
-            <Rocket className="h-4 w-4" /> Aeroin SpaceTech Pvt. Ltd.
-          </div>
           <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl animate-fade-in-up">
             About Aeroin EduTech
           </h1>
@@ -565,22 +562,24 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Esteemed Partners &amp; Collaborations
             </h2>
+
             <p className="mt-4 text-slate-400">
               Organizations we proudly collaborate with across the space and technology ecosystem.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+
+          <div className="grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
             {PARTNERS.map((partner) => (
               <div
                 key={partner.src}
-                className="flex min-h-36 items-center justify-center rounded-xl border border-navy blue /10 bg-black p-5 transition-all hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-900/20"
+                className="group flex h-28 items-center justify-center px-4"
               >
                 <Image
                   src={partner.src}
                   alt={partner.name}
-                  width={240}
-                  height={140}
-                  className="h-24 w-full object-contain"
+                  width={220}
+                  height={120}
+                  className="max-h-24 w-auto max-w-full object-contain opacity-80 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100"
                 />
               </div>
             ))}
@@ -595,23 +594,28 @@ export default function AboutPage() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-sm text-orange-400">
               <ShieldCheck className="h-4 w-4" /> Industry–Academia
             </div>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Industry–Academia</h2>
+
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+              Industry–Academia
+            </h2>
+
             <p className="mt-4 text-slate-400">
               Connecting learners and educators with leading academic institutions.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+
+          <div className="grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
             {INDUSTRY_ACADEMIA.map((institution) => (
               <div
                 key={institution.src}
-                className="flex min-h-36 items-center justify-center rounded-xl border border-navy blue/10 bg-black p-5 transition-all hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-900/20"
+                className="group flex h-28 items-center justify-center px-4"
               >
                 <Image
                   src={institution.src}
                   alt={institution.name}
-                  width={240}
-                  height={140}
-                  className="h-24 w-full object-contain"
+                  width={220}
+                  height={120}
+                  className="max-h-24 w-auto max-w-full object-contain opacity-80 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100"
                 />
               </div>
             ))}

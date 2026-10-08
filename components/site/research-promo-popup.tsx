@@ -14,7 +14,7 @@ export function ResearchPromoPopup() {
       const timer = setTimeout(() => {
         setShowPromo(true);
         sessionStorage.setItem('aeroin_research_popup', 'true');
-      }, 2000);
+      }, 500);
 
       return () => clearTimeout(timer);
     }

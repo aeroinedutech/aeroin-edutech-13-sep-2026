@@ -162,7 +162,7 @@ export default function ProgramDetailPage({ params }: PageProps) {
               </>
             ) : (
               <>
-                <InfoPill icon={<Clock className="h-5 w-5" />} label="Duration Options" value="3 Days – 3 Months" />
+                <InfoPill icon={<Clock className="h-5 w-5" />} label="Duration Options" value="Free Demo – 3 Months" />
                 <InfoPill icon={<GraduationCap className="h-5 w-5" />} label="Starting Fee" value={formatINR(STARTING_FEE)} />
                 <InfoPill icon={<Sparkles className="h-5 w-5" />} label="Free Demo" value="Available" />
                 <InfoPill icon={<Monitor className="h-5 w-5" />} label="Mode" value="Online" />

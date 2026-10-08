@@ -14,7 +14,7 @@ export interface PricingTier {
 
 export const PRICING_TIERS: PricingTier[] = [
   {
-    id: '3-days',
+    id: 'free demo',
     label: 'Free Demo',
     duration: '1-on-1 Live Session',
     amount: 0,
@@ -88,7 +88,7 @@ export const LEARNING_PATHS: LearningPath[] = [
   {
     number: '01',
     label: 'Free Demo Session',
-    duration: '3 Days',
+    duration: '1-on-1 Live Session',
     structure: 'Introductory Session',
     icon: 'Zap',
     description: 'A free demo session to experience our teaching methodology before enrolling in a full program.',

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: 'Aeroin EduTech | Space Technology & Aerospace Programs',
   description:
-    'Learn space technology, aerospace engineering, AI, robotics, CubeSat technology, rocket propulsion, Earth observation and planetary exploration with Aeroin EduTech. Programs from 3-day Masterclasses to 3-month Research Internships.',
+    'Learn space technology, aerospace engineering, AI, robotics, CubeSat technology, rocket propulsion, Earth observation and planetary exploration with Aeroin EduTech. Programs from free foundation sessions to 3-month Research Internships.',
   keywords: [
     'space technology',
     'aerospace engineering',

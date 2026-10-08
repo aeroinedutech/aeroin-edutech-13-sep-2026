@@ -22,7 +22,7 @@ const SUBJECT_CATEGORIES: SubjectCategory[] = [
 
 const LEVELS: ProgramLevel[] = ['Beginner', 'Intermediate', 'Advanced'];
 
-const DURATION_FILTERS = ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '3 Months'] as const;
+const DURATION_FILTERS = ['Free Demo', '15 Days', '4 Weeks', '8 Weeks', '3 Months'] as const;
 const LEARNING_LEVEL_FILTERS = ['Foundation', 'Master', 'Innovative', 'Advanced', 'Deep Research'] as const;
 
 function ProgramsContent() {
@@ -55,7 +55,7 @@ function ProgramsContent() {
       const timer = setTimeout(() => {
         setShowPromo(true);
         sessionStorage.setItem('aeroin_program_popup', 'true');
-      }, 2000);
+      }, 500);
 
       return () => clearTimeout(timer);
     }

@@ -30,6 +30,7 @@ import {
   ShieldCheck,
   FlaskConical,
   BookOpen,
+  Handshake,
 } from 'lucide-react';
 
 const PATH_ICONS: Record<string, React.ReactNode> = {
@@ -159,7 +160,7 @@ export default function Home() {
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">Choose Your Learning Path</h2>
             <p className="mt-4 text-slate-400">
-              From a 3-day foundation session to a 3-month Deep Research Program — find the path that fits your goals.
+              From a free foundation session to a 3-month Deep Research Program — find the path that fits your goals.
             </p>
           </div>
 
@@ -369,12 +370,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <WhyCard icon={<Wrench />} title="Practical Learning" desc="Learn through projects and simulations." />
-            <WhyCard icon={<Briefcase />} title="Industry-Oriented" desc="Curriculum aligned with real aerospace and space technology applications." />
-            <WhyCard icon={<Users />} title="Expert-Led" desc="Learn from professionals and technical mentors." />
-            <WhyCard icon={<Target />} title="Project-Based" desc="Build practical engineering and technology projects." />
-            <WhyCard icon={<Zap />} title="Future Skills" desc="AI, robotics, autonomous systems and space technology." />
-            <WhyCard icon={<Clock />} title="Flexible Programs" desc="Multiple duration options from 3 days to 3 months." />
+            <WhyCard title="Practical Learning" desc="Learn through projects and simulations." />
+            <WhyCard title="Industry-Oriented" desc="Curriculum aligned with real aerospace and space technology applications." />
+            <WhyCard title="Expert-Led" desc="Learn from professionals and technical mentors." />
+            <WhyCard title="Project-Based" desc="Build practical engineering and technology projects." />
+            <WhyCard title="Future Skills" desc="AI, robotics, autonomous systems and space technology." />
+            <WhyCard title="Flexible Programs" desc="Multiple duration options from free demo to 3 months." />
           </div>
         </div>
       </section>
@@ -388,10 +389,10 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <StepCard number="01" icon={<Rocket />} title="Explore" desc="Browse available programs." />
-            <StepCard number="02" icon={<GraduationCap />} title="Select" desc="Choose your program and duration." />
-            <StepCard number="03" icon={<ShieldCheck />} title="Pay" desc="Complete secure payment through Razorpay." />
-            <StepCard number="04" icon={<Zap />} title="Start Learning" desc="Receive further program instructions through the applicable communication channel." />
+            <StepCard number="01" title="Explore" desc="Browse available programs." />
+            <StepCard number="02" title="Select" desc="Choose your program and duration." />
+            <StepCard number="03" title="Pay" desc="Complete secure payment through Razorpay." />
+            <StepCard number="04" title="Start Learning" desc="Receive further program instructions through the applicable communication channel." />
           </div>
         </div>
       </section>
@@ -403,23 +404,29 @@ export default function Home() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
               <ShieldCheck className="h-4 w-4" /> MoU Signed
             </div>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Institutions We Signed MoUs With</h2>
+
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+              Institutions We Signed MoUs With
+            </h2>
+
             <p className="mt-4 text-slate-400">
-              Formal partnerships with leading institutions for collaborative programs and initiatives.
+              Formal partnerships with leading institutions for collaborative
+              programs and initiatives.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+
+          <div className="grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
             {MOU_INSTITUTIONS.map((inst) => (
               <div
                 key={inst.name}
-                className="group flex min-h-36 items-center justify-center rounded-xl border border-white/10 bg-black/40 p-5 transition-all hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-900/20"
+                className="group flex h-28 items-center justify-center px-4"
               >
                 <Image
                   src={inst.src}
                   alt={inst.name}
-                  width={200}
+                  width={220}
                   height={120}
-                  className="h-20 w-full object-contain opacity-80 transition-all duration-300 group-hover:opacity-100 group-hover:scale-105"
+                  className="max-h-24 w-auto max-w-full object-contain opacity-80 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100"
                 />
               </div>
             ))}
@@ -434,23 +441,29 @@ export default function Home() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
               <GraduationCap className="h-4 w-4" /> Universities
             </div>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Universities We Worked With</h2>
+
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+              Universities We Worked With
+            </h2>
+
             <p className="mt-4 text-slate-400">
-              Collaborating with leading universities across India for aerospace and space technology programs.
+              Collaborating with leading universities across India for aerospace and
+              space technology programs.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+
+          <div className="grid grid-cols-2 items-center gap-8 sm:grid-cols-3 lg:grid-cols-5">
             {UNIVERSITIES_WORKED.map((uni) => (
               <div
                 key={uni.name}
-                className="group flex min-h-32 items-center justify-center rounded-xl border border-white/10 bg-black/40 p-4 transition-all hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-900/20"
+                className="group flex items-center justify-center p-4"
               >
                 <Image
                   src={uni.src}
                   alt={uni.name}
                   width={160}
                   height={100}
-                  className="h-16 w-full object-contain opacity-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-105"
+                  className="h-auto max-h-20 w-auto max-w-full object-contain opacity-75 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100"
                 />
               </div>
             ))}
@@ -465,28 +478,35 @@ export default function Home() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-600/10 px-4 py-1.5 text-sm text-emerald-300">
               <School className="h-4 w-4" /> Schools
             </div>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Schools We Worked With</h2>
+
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+              Schools We Worked With
+            </h2>
+
             <p className="mt-4 text-slate-400">
-              Inspiring young minds through space technology education at schools across India.
+              Inspiring young minds through space technology education at schools
+              across India.
             </p>
           </div>
+
           <div className="mx-auto max-w-6xl">
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-4 lg:grid-cols-4">
+            <div className="grid grid-cols-2 items-start gap-8 sm:grid-cols-3 lg:grid-cols-4">
               {SCHOOLS_WORKED.map((school) => (
                 <div
                   key={school.name}
-                  className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 transition-all hover:border-blue-500/40 hover:shadow-lg hover:shadow-blue-900/20"
+                  className="group flex flex-col items-center justify-start p-4 text-center"
                 >
                   <Image
                     src={school.src}
                     alt={school.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    width={180}
+                    height={120}
+                    className="h-auto max-h-24 w-auto max-w-full object-contain opacity-80 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
                   />
-                  <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[hsl(222_47%_7%)] via-[hsl(222_47%_7%)]/50 to-transparent">
-                    <p className="p-4 text-sm font-semibold text-white">{school.name}</p>
-                  </div>
+
+                  <p className="mt-4 text-sm font-semibold text-white transition-colors group-hover:text-emerald-300">
+                    {school.name}
+                  </p>
                 </div>
               ))}
             </div>
@@ -547,25 +567,19 @@ export default function Home() {
   );
 }
 
-function WhyCard({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) {
+function WhyCard({ title, desc }: { title: string; desc: string }) {
   return (
     <div className="rounded-xl border border-white/10 bg-[hsl(222_40%_10%)] p-6 transition-all hover:border-blue-500/30">
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600/15 text-blue-400">
-        {icon}
-      </div>
       <h3 className="mb-2 text-lg font-bold text-white">{title}</h3>
       <p className="text-sm text-slate-400">{desc}</p>
     </div>
   );
 }
 
-function StepCard({ number, icon, title, desc }: { number: string; icon: React.ReactNode; title: string; desc: string }) {
+function StepCard({ number, title, desc }: { number: string; title: string; desc: string }) {
   return (
     <div className="relative rounded-xl border border-white/10 bg-[hsl(222_40%_10%)] p-6">
       <span className="absolute right-4 top-4 text-3xl font-black text-white 300/20">{number}</span>
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600/15 text-blue-400">
-        {icon}
-      </div>
       <h3 className="mb-2 text-lg font-bold text-white">{title}</h3>
       <p className="text-sm text-slate-400">{desc}</p>
     </div>
