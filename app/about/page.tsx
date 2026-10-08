@@ -54,12 +54,12 @@ const MISSION_POINTS = [
 ];
 
 const WHAT_WE_DO = [
-  { icon: <Rocket />, title: 'Space Technology Education', desc: 'Provide structured learning opportunities in aerospace and space technology.' },
-  { icon: <Wrench />, title: 'Practical Project-Based Learning', desc: 'Enable students to work on hands-on technical projects and engineering applications.' },
-  { icon: <FlaskConical />, title: 'Research & Innovation', desc: 'Provide opportunities for learners to explore research problems and develop technical solutions.' },
-  { icon: <GraduationCap />, title: 'Technical Training', desc: 'Conduct expert-led technical sessions, workshops, boot camps, and specialized programs.' },
-  { icon: <Briefcase />, title: 'Internships', desc: 'Provide practical exposure through space-tech internships and research-oriented learning.' },
-  { icon: <Building2 />, title: 'Institutional Programs', desc: 'Work with schools, colleges, universities, and institutions to deliver customized aerospace and STEM learning programs.' },
+  { title: 'Space Technology Education', desc: 'Provide structured learning opportunities in aerospace and space technology.' },
+  { title: 'Practical Project-Based Learning', desc: 'Enable students to work on hands-on technical projects and engineering applications.' },
+  { title: 'Research & Innovation', desc: 'Provide opportunities for learners to explore research problems and develop technical solutions.' },
+  { title: 'Technical Training', desc: 'Conduct expert-led technical sessions, workshops, boot camps, and specialized programs.' },
+  { title: 'Internships', desc: 'Provide practical exposure through space-tech internships and research-oriented learning.' },
+  { title: 'Institutional Programs', desc: 'Work with schools, colleges, universities, and institutions to deliver customized aerospace and STEM learning programs.' },
 ];
 
 const LEARNING_STAGES = [
@@ -349,9 +349,6 @@ export default function AboutPage() {
                 <span className="absolute right-4 top-4 text-3xl font-black text-white-300/20">
                   {String(i + 1).padStart(2, '0')}
                 </span>
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600/15 text-blue-400">
-                  {item.icon}
-                </div>
                 <h3 className="mb-2 text-lg font-bold text-white">{item.title}</h3>
                 <p className="text-sm text-slate-400">{item.desc}</p>
               </div>
