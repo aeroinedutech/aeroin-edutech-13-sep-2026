@@ -22,7 +22,7 @@ const GALLERY_IMAGES = [
   { src: '/images/gallery/program highlights 2.jpeg', alt: 'Value Added Programs on Drone Technology' },
   { src: '/images/gallery/program highlights 3.jpeg', alt: 'Value Added Programs at VISTAS' },
   { src: '/images/gallery/program highlights 4.jpeg', alt: 'Value Added Programs at VISTAS' },
-  { src: '/images/gallery/program highlights 5.jpg', alt: 'Value Added Programs at VELS Institution' },
+  { src: '/images/gallery/program highlights 5.JPG', alt: 'Value Added Programs at VELS Institution' },
   { src: '/images/gallery/program highlights 6.jpg', alt: 'Value Added Programs at SVC' },
 ];
 
