@@ -130,7 +130,7 @@ export default function Home() {
         {/* Layer 1 — Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/2538107/pexels-photo-2538107.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/Facts.gif"
             alt="Milky Way galaxy over the night sky"
             fill
             priority

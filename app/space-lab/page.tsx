@@ -88,7 +88,7 @@ export default function SpaceLabPage() {
       <section className="relative flex min-h-[55vh] items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-             src="https://images.pexels.com/photos/2538107/pexels-photo-2538107.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/Facts.gif"
             alt="Space technology lab"
             fill
             priority

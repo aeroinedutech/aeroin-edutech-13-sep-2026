@@ -229,7 +229,7 @@ export default function AboutPage() {
       <section className="relative flex min-h-[70vh] items-center overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/2538107/pexels-photo-2538107.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/Facts.gif"
             alt="Milky Way galaxy"
             fill
             priority
