@@ -242,14 +242,12 @@ function ProgramsContent() {
             active={learnerCategory === 'professional'}
             onClick={() => updateCategory('professional')}
             label="Professional"
-            icon={<Briefcase className="h-4 w-4" />}
             activeColor="blue"
           />
           <CategoryTab
             active={learnerCategory === 'school'}
             onClick={() => updateCategory('school')}
             label="School"
-            icon={<School className="h-4 w-4" />}
             activeColor="green"
           />
         </div>

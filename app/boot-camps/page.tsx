@@ -15,6 +15,7 @@ import {
   Satellite,
   ArrowRight,
   Sparkles,
+  BrainCircuit
 } from 'lucide-react';
 import { EnquiryButtons } from '@/components/site/enquiry-buttons';
 
@@ -98,6 +99,8 @@ const KEY_FEATURES = [
   { icon: <Briefcase />, title: 'Industry-Oriented Exposure', desc: 'Learn with industry-relevant tools and methodologies.' },
   { icon: <GraduationCap />, title: 'Expert-Led Sessions', desc: 'Sessions conducted by aerospace and technology professionals.' },
   { icon: <Cpu />, title: 'Problem-Solving Activities', desc: 'Develop analytical thinking through technical challenges.' },
+  { icon: <BrainCircuit />, title: 'Technical Skills Development', desc: 'Build proficiency in relevant tools, technologies, and engineering workflows through guided hands-on practice.' },
+  { icon: <Rocket />, title: 'Career & Industry Readiness', desc: 'Develop technical communication, teamwork, and project presentation skills for future engineering and technology opportunities.' },
 ];
 
 export default function BootCampsPage() {
@@ -117,9 +120,6 @@ export default function BootCampsPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/80 via-[hsl(222_47%_7%)]/70 to-[hsl(222_47%_7%)]" />
         </div>
         <div className="relative mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
-            <Rocket className="h-4 w-4" /> Boot Camps
-          </div>
           <h1 className="text-4xl font-extrabold text-white sm:text-5xl">
             Aerospace &amp; Space Technology Boot Camps
           </h1>

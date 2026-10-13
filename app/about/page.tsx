@@ -51,6 +51,7 @@ const MISSION_POINTS = [
   'Create opportunities for internships and technical projects.',
   'Support institutions in building stronger aerospace and STEM ecosystems.',
   'Prepare students for future opportunities in the space industry.',
+  'Promote collaboration between students, educators, and industry professionals.',
 ];
 
 const WHAT_WE_DO = [
@@ -137,6 +138,18 @@ const PARTNERS = [
   {
     name: 'Indian Planetary Space Vault and Research',
     src: '/images/partners/image copy 3.png',
+  },
+  {
+    name: 'MH Cockpit Aviation',
+    src: '/images/partners/mh_cockpit.png',
+  },
+  {
+    name: 'Quest for Success',
+    src: '/images/partners/qfs.png',
+  },
+  {
+    name: 'BuildUp global',
+    src: '/images/partners/buildup.png',
   },
 ];
 
@@ -565,7 +578,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-3">
             {PARTNERS.map((partner) => (
               <div
                 key={partner.src}

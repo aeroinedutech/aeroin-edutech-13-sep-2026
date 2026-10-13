@@ -62,9 +62,6 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="border-b border-white/10 py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
-            <Rocket className="h-4 w-4" /> Aeroin EduTech
-          </div>
           <h1 className="text-4xl font-bold text-white sm:text-5xl">Get in Touch</h1>
           <p className="mt-4 text-lg text-slate-400">
             Have questions about our programs? We&apos;re here to help.

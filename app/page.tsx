@@ -76,6 +76,52 @@ const SCHOOLS_WORKED = [
   { name: 'Karur Vidyalaya School', src: '/images/hero/ksv.png' },
 ];
 
+const STATS = [
+  { value: '7,000+', label: 'Space Tech Learners', icon: <Users /> },
+  { value: '100+', label: 'Space Tech Internships', icon: <Briefcase /> },
+  { value: '15+', label: 'Expert Aerospace Mentors', icon: <Award /> },
+  { value: '75+', label: 'Space Tech Talks Delivered', icon: <Telescope /> },
+];
+
+const PARTNERS = [
+  {
+    name: 'ISRO Registered Space Tutor',
+    src: '/images/partners/image-removebg-preview_(1).png',
+  },
+  {
+    name: 'Sivamurugan Auto Components Private Limited',
+    src: '/images/partners/image.png',
+  },
+  {
+    name: 'Cosmobuzz',
+    src: '/images/partners/image-removebg-preview_(2).png',
+  },
+  {
+    name: 'CR partner logo',
+    src: '/images/partners/image copy.png',
+  },
+  {
+    name: 'Rocket Factory India',
+    src: '/images/partners/image copy 2.png',
+  },
+  {
+    name: 'Indian Planetary Space Vault and Research',
+    src: '/images/partners/image copy 3.png',
+  },
+  {
+    name: 'MH Cockpit Aviation',
+    src: '/images/partners/mh_cockpit.png',
+  },
+  {
+    name: 'Quest for Success',
+    src: '/images/partners/qfs.png',
+  },
+  {
+    name: 'BuildUp global',
+    src: '/images/partners/buildup.png',
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -123,18 +169,18 @@ export default function Home() {
 
             <div className="animate-fade-in-up lg:pt-0">
               <div className="mb-4 flex justify-end">
-                  <div className="flex flex-col items-center rounded-2xl border border-orange-500/30 bg-black/50 px-5 py-3">
-                    <Image
-                      src="/images/isro-logo.png"
-                      alt="ISRO"
-                      width={90}
-                      height={90}
-                      className="object-contain"
-                    />
-                    <span className="mt-1 text-sm font-medium text-orange-400">
-                      Registered Space Tutor
-                    </span>
-                  </div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-black/50 px-3 py-2">
+                  <Image
+                    src="/images/isro-logo.png"
+                    alt="ISRO"
+                    width={32}
+                    height={32}
+                    className="h-8 w-8 shrink-0 object-contain"
+                  />
+                  <span className="whitespace-nowrap text-sm font-medium text-orange-400">
+                    Registered Space Tutor
+                  </span>
+                </div>
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/20 bg-black/30 shadow-2xl shadow-blue-950/40">
                 <Image
@@ -175,7 +221,6 @@ export default function Home() {
                 }`}
               >
                 <div className="mb-3 flex items-center justify-between">
-                  <span className="text-2xl font-black text-white-300/30">{path.number}</span>
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600/15 text-orange-400">
                     {PATH_ICONS[path.icon]}
                   </div>
@@ -276,7 +321,6 @@ export default function Home() {
           <div className="mb-10 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
             <div>
               <div className="mb-2 flex items-center gap-2 text-sm text-blue-400">
-                <Briefcase className="h-4 w-4" />
                 For College Students &amp; Working Professionals
               </div>
               <h2 className="text-3xl font-bold text-white">Featured Professional Programs</h2>
@@ -303,7 +347,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
               <div>
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
-                  <FlaskConical className="h-4 w-4" /> Research Internship
+                   Research Internship
                 </div>
                 <h2 className="text-3xl font-bold text-white">Go Beyond Learning. Research &amp; Publish.</h2>
                 <p className="mt-4 text-slate-300">
@@ -339,7 +383,6 @@ export default function Home() {
           <div className="mb-10 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
             <div>
               <div className="mb-2 flex items-center gap-2 text-sm text-emerald-400">
-                <School className="h-4 w-4" />
                 For School Students
               </div>
               <h2 className="text-3xl font-bold text-white">School Programs</h2>
@@ -380,6 +423,33 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============ OUR IMPACT ============ */}
+      <section className="relative overflow-hidden py-20 bg-[hsl(222_47%_5%)]">
+        <div className="absolute inset-0 bg-stars opacity-30" />
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Our Impact</h2>
+            <p className="mt-4 text-slate-400">
+              Measurable outcomes from our space technology education initiatives.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
+            {STATS.map((stat) => (
+              <div
+                key={stat.label}
+                className="rounded-xl border border-white/10 bg-[hsl(222_40%_10%)] p-6 text-center transition-all hover:border-blue-500/30"
+              >
+                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-blue-600/15 text-blue-400">
+                  {stat.icon}
+                </div>
+                <div className="text-4xl font-black text-white sm:text-5xl">{stat.value}</div>
+                <p className="mt-2 text-sm text-slate-400">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* HOW IT WORKS */}
       <section className="py-20 bg-[hsl(222_47%_5%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -391,8 +461,40 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <StepCard number="01" title="Explore" desc="Browse available programs." />
             <StepCard number="02" title="Select" desc="Choose your program and duration." />
-            <StepCard number="03" title="Pay" desc="Complete secure payment through Razorpay." />
+            <StepCard number="03" title="Enroll" desc="Complete secure enrollment through Razorpay." />
             <StepCard number="04" title="Start Learning" desc="Receive further program instructions through the applicable communication channel." />
+          </div>
+        </div>
+      </section>
+
+      {/* ============ ESTEEMED PARTNERS & COLLABORATIONS ============ */}
+      <section className="py-20 bg-[hsl(222_47%_5%)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+              Esteemed Partners &amp; Collaborations
+            </h2>
+
+            <p className="mt-4 text-slate-400">
+              Organizations we proudly collaborate with across the space and technology ecosystem.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-3">
+            {PARTNERS.map((partner) => (
+              <div
+                key={partner.src}
+                className="group flex h-28 items-center justify-center px-4"
+              >
+                <Image
+                  src={partner.src}
+                  alt={partner.name}
+                  width={220}
+                  height={120}
+                  className="max-h-24 w-auto max-w-full object-contain opacity-80 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -496,13 +598,14 @@ export default function Home() {
                   key={school.name}
                   className="group flex flex-col items-center justify-start p-4 text-center"
                 >
-                  <Image
-                    src={school.src}
-                    alt={school.name}
-                    width={180}
-                    height={120}
-                    className="h-auto max-h-24 w-auto max-w-full object-contain opacity-80 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
-                  />
+
+                <Image
+                  src={school.src}
+                  alt={school.name}
+                  width={320}
+                  height={200}
+                  className="h-40 w-full rounded-lg object-cover opacity-90 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
+                />
 
                   <p className="mt-4 text-sm font-semibold text-white transition-colors group-hover:text-emerald-300">
                     {school.name}
@@ -579,7 +682,6 @@ function WhyCard({ title, desc }: { title: string; desc: string }) {
 function StepCard({ number, title, desc }: { number: string; title: string; desc: string }) {
   return (
     <div className="relative rounded-xl border border-white/10 bg-[hsl(222_40%_10%)] p-6">
-      <span className="absolute right-4 top-4 text-3xl font-black text-white 300/20">{number}</span>
       <h3 className="mb-2 text-lg font-bold text-white">{title}</h3>
       <p className="text-sm text-slate-400">{desc}</p>
     </div>

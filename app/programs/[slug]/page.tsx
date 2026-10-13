@@ -145,32 +145,6 @@ export default function ProgramDetailPage({ params }: PageProps) {
           </div>
           <p className="mt-4 max-w-3xl text-lg text-slate-300">{program.shortDescription}</p>
 
-          <div className="mt-8 flex flex-wrap gap-6">
-            {isResearch ? (
-              <>
-                <InfoPill icon={<Clock className="h-5 w-5" />} label="Duration" value="3 Months" />
-                <InfoPill icon={<Layers className="h-5 w-5" />} label="Program Type" value="Deep Research Program" />
-                <InfoPill icon={<Monitor className="h-5 w-5" />} label="Mode" value="Online / Offline" />
-              </>
-            ) : hasCustomPricing && customPricing ? (
-              <>
-                <InfoPill icon={<Clock className="h-5 w-5" />} label="Duration" value={customPricing.duration} />
-                <InfoPill icon={<IndianRupee className="h-5 w-5" />} label="Program Fee" value={formatINR(customPricing.amount)} />
-                <InfoPill icon={<Layers className="h-5 w-5" />} label="Schedule" value={customPricing.schedule ?? 'Weekends Only'} />
-                <InfoPill icon={<Monitor className="h-5 w-5" />} label="Mode" value="Online" />
-                <InfoPill icon={<Layers className="h-5 w-5" />} label="GST" value="Inclusive" />
-              </>
-            ) : (
-              <>
-                <InfoPill icon={<Clock className="h-5 w-5" />} label="Duration Options" value="Free Demo – 3 Months" />
-                <InfoPill icon={<GraduationCap className="h-5 w-5" />} label="Starting Fee" value={formatINR(STARTING_FEE)} />
-                <InfoPill icon={<Sparkles className="h-5 w-5" />} label="Free Demo" value="Available" />
-                <InfoPill icon={<Monitor className="h-5 w-5" />} label="Mode" value="Online" />
-                <InfoPill icon={<Layers className="h-5 w-5" />} label="GST" value="Inclusive" />
-              </>
-            )}
-          </div>
-
           {isResearch && program.internshipFocus && (
             <div className="mt-6 max-w-3xl rounded-xl border border-blue-500/20 bg-blue-600/10 p-5">
               <p className="text-sm font-semibold text-blue-300">Internship Focus</p>

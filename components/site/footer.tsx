@@ -8,6 +8,7 @@ import {
   Facebook,
   Instagram,
   Linkedin,
+  Youtube,
 } from 'lucide-react';
 import {
   PROFESSIONAL_FOOTER_LINKS,
@@ -106,6 +107,15 @@ export function Footer() {
                 >
                   <MessageCircle className="h-4 w-4" />
                 </a>
+                <a
+                  href="https://www.youtube.com/@AeroinEduTech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-400 transition-all hover:border-red-500/40 hover:bg-red-500/10 hover:text-red-400"
+                >
+                  <Youtube className="h-4 w-4" />
+                </a>
               </div>
             </div>
           </div>
@@ -136,7 +146,7 @@ export function Footer() {
               Professional Programs
             </h3>
             <ul className="space-y-2">
-              {PROFESSIONAL_FOOTER_LINKS.slice(0, 7).map((c) => (
+              {PROFESSIONAL_FOOTER_LINKS.slice(6, 13).map((c) => (
                 <li key={c.slug}>
                   <FooterLink href={`/programs/${c.slug}`}>{c.name}</FooterLink>
                 </li>
@@ -150,7 +160,7 @@ export function Footer() {
               Research Internships
             </h3>
             <ul className="space-y-2">
-              {RESEARCH_FOOTER_LINKS.slice(0, 5).map((c) => (
+              {RESEARCH_FOOTER_LINKS.slice(0, 6).map((c) => (
                 <li key={c.slug}>
                   <FooterLink href={`/programs/${c.slug}`}>
                     {c.name.replace(' — Research Internship', '')}

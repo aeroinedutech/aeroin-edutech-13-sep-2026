@@ -17,6 +17,7 @@ import {
   Building2,
   CheckCircle2,
   Sparkles,
+  BrainCircuit,
 } from 'lucide-react';
 import { EnquiryButtons } from '@/components/site/enquiry-buttons';
 import { whatsappLink, emailLink } from '@/lib/enquiry';
@@ -48,6 +49,9 @@ const WHAT_WE_PROVIDE = [
   { icon: <Target />, label: 'Student Project Support' },
   { icon: <GraduationCap />, label: 'Faculty Training' },
   { icon: <BookOpen />, label: 'Curriculum Support' },
+  { icon: <BrainCircuit />, label: 'AI & Machine Learning Kits' },
+  { icon: <Wrench />, label: 'Engineering Design Workshops' },
+  { icon: <FlaskConical />, label: 'Research & Experimentation Support' },
 ];
 
 const LAB_PACKAGES = [
@@ -94,9 +98,6 @@ export default function SpaceLabPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/80 via-[hsl(222_47%_7%)]/70 to-[hsl(222_47%_7%)]" />
         </div>
         <div className="relative mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-darkblue-300">
-            <Building2 className="h-4 w-4" /> Space Lab Setup
-          </div>
           <h1 className="text-4xl font-extrabold text-white-300 sm:text-5xl">
             Build Your Own Space Technology Learning Lab
           </h1>

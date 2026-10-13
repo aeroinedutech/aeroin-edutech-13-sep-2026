@@ -85,14 +85,11 @@ export default function ResearchInternshipPage() {
         </div>
 
         <div className="relative mx-auto max-w-4xl px-4 py-24 text-center sm:px-6 lg:px-8 lg:py-32">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-blue-300/10 px-4 py-1.5 text-sm text-orange-600 animate-fade-in-up">
-            <FlaskConical className="h-4 w-4" /> Research Internship
-          </div>
           <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl animate-fade-in-up">
             Research Internship in{' '}
             <span className="text-gradient">Aerospace &amp; Space Technology</span>
           </h1>
-          <p className="mt-6 max-w-2xl mx-auto text-lg text-slate-600 animate-fade-in-up">
+          <p className="mt-6 max-w-2xl mx-auto text-lg text-white animate-fade-in-up">
             Go beyond learning. Explore, design, simulate, research, and publish.
           </p>
 

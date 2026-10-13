@@ -146,9 +146,6 @@ export default function CareersPage() {
         </div>
 
         <div className="relative mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-32">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-black-500/30 bg-orange-600/10 px-3 py-1.5 text-xs text-white-300 sm:text-sm animate-fade-in-up">
-            <Rocket className="h-4 w-4" /> Careers at Aeroin EduTech
-          </div>
           <h1 className="text-3xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl animate-fade-in-up">
             Build Your Career in{' '}
             <span className="text-gradient">Aerospace &amp; Space Technology</span>

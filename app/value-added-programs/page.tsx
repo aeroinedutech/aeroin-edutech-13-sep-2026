@@ -99,9 +99,6 @@ export default function ValueAddedProgramsPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_7%)]/80 via-[hsl(222_47%_7%)]/70 to-[hsl(222_47%_7%)]" />
         </div>
         <div className="relative mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-600/30 bg-blue-900/10 px-4 py-1.5 text-sm text-cyan-300">
-            <BookOpen className="h-4 w-4" /> Value Added Programs
-          </div>
           <h1 className="text-4xl font-extrabold text-white sm:text-5xl">Value Added Programs</h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-dark-slate-300">
             Specialized short-term technical learning opportunities that complement students&apos;
