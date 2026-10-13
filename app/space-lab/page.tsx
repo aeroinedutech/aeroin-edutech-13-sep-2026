@@ -49,7 +49,7 @@ const WHAT_WE_PROVIDE = [
   { icon: <Target />, label: 'Student Project Support' },
   { icon: <GraduationCap />, label: 'Faculty Training' },
   { icon: <BookOpen />, label: 'Curriculum Support' },
-  { icon: <BrainCircuit />, label: 'AI & Machine Learning Kits' },
+  { icon: <BrainCircuit />, label: 'AI & Machine Learning' },
   { icon: <Wrench />, label: 'Engineering Design Workshops' },
   { icon: <FlaskConical />, label: 'Research & Experimentation Support' },
 ];
