@@ -120,6 +120,10 @@ const PARTNERS = [
     name: 'BuildUp global',
     src: '/images/partners/buildup.png',
   },
+  {
+    name: 'clever harvey',
+    src: '/images/partners/clever.png',
+  },
 ];
 
 export default function Home() {
