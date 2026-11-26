@@ -454,23 +454,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section className="py-20 bg-[hsl(222_47%_5%)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">How It Works</h2>
-            <p className="mt-4 text-slate-400">Get from program discovery to enrollment in four simple steps.</p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <StepCard number="01" title="Explore" desc="Browse available programs." />
-            <StepCard number="02" title="Select" desc="Choose your program and duration." />
-            <StepCard number="03" title="Enroll" desc="Complete secure enrollment through Razorpay." />
-            <StepCard number="04" title="Start Learning" desc="Receive further program instructions through the applicable communication channel." />
-          </div>
-        </div>
-      </section>
-
       {/* ============ ESTEEMED PARTNERS & COLLABORATIONS ============ */}
       <section className="py-20 bg-[hsl(222_47%_5%)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -512,13 +495,13 @@ export default function Home() {
             </div>
 
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
-              Institutions We Signed MoUs With
-            </h2>
+  Our Institutional Partnerships
+</h2>
 
-            <p className="mt-4 text-slate-400">
-              Formal partnerships with leading institutions for collaborative
-              programs and initiatives.
-            </p>
+<p className="mt-4 max-w-2xl mx-auto text-slate-400">
+  Building long-term academic and industry collaborations to advance
+  aerospace, space technology and experiential learning.
+</p>
           </div>
 
           <div className="grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
@@ -640,36 +623,71 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative overflow-hidden py-20">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.pexels.com/photos/7327336/pexels-photo-7327336.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Rocket launch"
-            fill
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(222_47%_7%)] via-[hsl(222_47%_7%)]/85 to-[hsl(222_47%_7%)]/50" />
-        </div>
-        <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">Ready to Start Your Space Journey?</h2>
-          <p className="mt-4 text-lg text-slate-300">
-            Explore our programs and enroll today. Choose your program duration, pay securely,
-            and take the first step toward building the future of space technology.
-          </p>
-          <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <Button asChild size="lg" className="bg-blue-600 text-white hover:bg-blue-500 glow-blue">
-              <Link href="/programs">
-                Explore Programs <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10">
-              <Link href="/about">Learn About Aeroin</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+     {/* FINAL CTA */}
+<section className="relative overflow-hidden py-24">
+  <div className="absolute inset-0">
+    <Image
+      src="https://images.pexels.com/photos/7327336/pexels-photo-7327336.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      alt="Aerospace and space technology education"
+      fill
+      sizes="100vw"
+      className="object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-r from-[hsl(222_47%_7%)] via-[hsl(222_47%_7%)]/90 to-[hsl(222_47%_7%)]/70" />
+  </div>
+
+  <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <div className="text-center">
+      <h2 className="text-3xl font-bold text-white sm:text-5xl">
+        Build the Future of Aerospace & Space Technology
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-300">
+        Whether you're a student exploring aerospace, a school looking to introduce
+        STEM and space technology, or a college seeking technical programs and
+        industry collaborations, Aeroin can help you take the next step.
+      </p>
+    </div>
+
+    <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <Link
+        href="/programs"
+        className="rounded-xl border border-white/15 bg-white/10 p-6 text-center transition hover:border-blue-400 hover:bg-white/15"
+      >
+        <h3 className="text-lg font-semibold text-white">
+          Explore Student Programs
+        </h3>
+        <p className="mt-2 text-sm text-slate-300">
+          Explore aerospace, SpaceTech and engineering programs.
+        </p>
+      </Link>
+
+      <Link
+        href="/contact"
+        className="rounded-xl border border-white/15 bg-white/10 p-6 text-center transition hover:border-blue-400 hover:bg-white/15"
+      >
+        <h3 className="text-lg font-semibold text-white">
+          Partner With Aeroin
+        </h3>
+        <p className="mt-2 text-sm text-slate-300">
+          Discuss programs for schools, colleges and institutions.
+        </p>
+      </Link>
+
+      <Link
+        href="/research-internship"
+        className="rounded-xl border border-white/15 bg-white/10 p-6 text-center transition hover:border-blue-400 hover:bg-white/15 sm:col-span-2 lg:col-span-1"
+      >
+        <h3 className="text-lg font-semibold text-white">
+          Explore Research Programs
+        </h3>
+        <p className="mt-2 text-sm text-slate-300">
+          Develop technical knowledge through guided research.
+        </p>
+      </Link>
+    </div>
+  </div>
+</section>
     </>
   );
 }
