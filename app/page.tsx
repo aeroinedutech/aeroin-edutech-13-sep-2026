@@ -155,7 +155,7 @@ export default function Home() {
                 Empowering Space EduTech
               </h1>
               <p className="mt-6 text-lg text-slate-300">
-               India's Leading Aerospace Edutech Company with Practical, industry-aligned education in space technology, aerospace, AI, robotics and satellite systems led by experts and designed for the next generation of space innovators.
+               Aeroin EduTech delivers practical aerospace, space technology and STEM education for students, schools and colleges. Through hands-on training, technical programs, research opportunities, workshops and institutional collaborations, we help learners and educational institutions develop skills in aerospace engineering, satellite technology, robotics and emerging technologies.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button asChild size="lg" className="bg-blue-600 text-white hover:bg-blue-500">
