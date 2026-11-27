@@ -62,7 +62,7 @@ export const PRICING_TIERS: PricingTier[] = [
     amount: 25370,
     paise: 2537000,
     programType: 'Deep Research Program',
-    learningStructure: 'Theory + Design + Simulation + Research + Paper Publication',
+    learningstructure: 'Theory + Design + Simulation + Research + Research Paper Preparation',
     focus: 'A comprehensive research-oriented learning pathway involving technical learning, engineering design, simulation, research methodology, research execution, and preparation/publication of a research paper.',
     isResearch: true,
   },
@@ -95,7 +95,7 @@ export const LEARNING_PATHS: LearningPath[] = [
   },
   {
     number: '02',
-    label: 'master Program',
+    label: 'Master Program',
     duration: '15 Days',
     structure: 'Theory',
     icon: 'BookOpen',
