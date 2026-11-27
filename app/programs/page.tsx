@@ -22,7 +22,7 @@ const SUBJECT_CATEGORIES: SubjectCategory[] = [
 
 const LEVELS: ProgramLevel[] = ['Beginner', 'Intermediate', 'Advanced'];
 
-const DURATION_FILTERS = ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks']; as const;
+const DURATION_FILTERS = ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'] as const;
 const LEARNING_LEVEL_FILTERS = ['Foundation', 'Master', 'Innovative', 'Advanced', 'Deep Research'] as const;
 
 function ProgramsContent() {
