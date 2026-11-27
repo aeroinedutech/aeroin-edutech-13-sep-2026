@@ -66,6 +66,9 @@ function ProgramsContent() {
       if (learnerCategory !== 'all' && program.learnerCategory !== learnerCategory) return false;
       if (subjectFilter && !program.subjectCategories.includes(subjectFilter)) return false;
       if (levelFilter && program.level !== levelFilter) return false;
+      if (durationFilter && !program.durations?.includes(durationFilter)) return false;
+      if (durationFilter && !program.durations?.includes(durationFilter)) return false;
+      
       if (search) {
         const q = search.toLowerCase();
         if (
