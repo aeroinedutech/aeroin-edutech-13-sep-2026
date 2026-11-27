@@ -58,6 +58,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     description:
       'This advanced program bridges artificial intelligence and space mission design. You will explore how modern ML and reinforcement learning techniques are transforming trajectory optimization, resource budgeting, autonomous spacecraft decision-making and multi-satellite constellation planning. Through a hands-on lunar transfer mission project, you will design and develop an AI-assisted space mission planner.',
     level: 'Advanced',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'professional',
     subjectCategories: ['AI & Machine Learning', 'Space Technology'],
     image:
@@ -116,6 +117,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     description:
       'Combine satellite remote sensing with modern deep learning. You will work through the full Earth Observation pipeline — from image preprocessing and atmospheric correction to semantic segmentation, object detection and time-series change detection. The capstone project builds an AI-based system for land-cover mapping or disaster monitoring using real satellite datasets.',
     level: 'Advanced',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'professional',
     subjectCategories: ['Earth Observation', 'AI & Machine Learning'],
     image:
@@ -179,6 +181,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     description:
       'A comprehensive program on planetary rover engineering — from chassis and suspension design to autonomous perception, SLAM and path planning. You will work in ROS/ROS2, fuse IMU, LiDAR and camera data, and implement AI-based terrain analysis. The capstone project is a simulated autonomous rover capable of perception, navigation and obstacle avoidance.',
     level: 'Advanced',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'professional',
     subjectCategories: ['Robotics', 'Space Technology', 'AI & Machine Learning'],
     image:
@@ -244,6 +247,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     description:
       'Explore decentralized intelligence and collective behavior in multi-robot systems. From boids and flocking to multi-agent reinforcement learning and game-theoretic coordination, you will design and simulate a multi-robot swarm for cooperative exploration and mapping. The program covers consensus algorithms, formation control, collision avoidance and swarm-based satellite constellations.',
     level: 'Advanced',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'professional',
     subjectCategories: ['Robotics', 'AI & Machine Learning', 'Space Technology'],
     image:
@@ -311,6 +315,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     description:
       'Apply AI to real planetary datasets from NASA PDS and ISRO missions. You will build models for terrain classification, hazard detection, mineral mapping and autonomous science-target selection. The capstone project develops an AI model for autonomous planetary target selection using lunar or Martian surface imagery, covering deep-space autonomy and human-AI collaboration.',
     level: 'Advanced',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'professional',
     subjectCategories: ['AI & Machine Learning', 'Space Technology', 'Astronomy'],
     image:
@@ -377,6 +382,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     description:
       'A hands-on program covering the full CubeSat development lifecycle. You will explore satellite subsystems including power, communication, ADCS, payload and onboard computing, then design and simulate a CubeSat mission. The program emphasizes practical engineering with industry-standard tools and processes.',
     level: 'Intermediate',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'professional',
     subjectCategories: ['Space Technology', 'Aerospace Engineering'],
     image:
@@ -489,6 +495,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     description:
       'A comprehensive UAV technology program covering drone design, flight dynamics, autopilot systems, sensor integration and autonomous programming. You will explore fixed-wing and multirotor platforms, mission planning and autonomous navigation.',
     level: 'Intermediate',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'professional',
     subjectCategories: ['UAV & Drones', 'Robotics', 'Aerospace Engineering'],
     image:
@@ -599,6 +606,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     description:
       'A rigorous program in orbital mechanics and mission design. From Keplerian orbits and perturbations to interplanetary trajectory design and mission analysis, you will learn the mathematical foundations and practical tools used in real space mission planning.',
     level: 'Advanced',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'professional',
     subjectCategories: ['Space Technology', 'Aerospace Engineering'],
     image:
@@ -706,6 +714,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     description:
       'A program on aerospace structural engineering. Covering stress analysis, structural design, composite materials and finite element analysis, you will learn to design and analyze lightweight, high-strength aerospace structures.',
     level: 'Intermediate',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'professional',
     subjectCategories: ['Aerospace Engineering'],
     image:
@@ -759,6 +768,7 @@ export const PROFESSIONAL_PROGRAMS: Program[] = [
     description:
       'A dedicated 6-month weekend program on aerospace system design and simulation. Covering the full design cycle from conceptual design to simulation and optimization, you will learn multidisciplinary approaches to aerospace vehicle design. Classes are conducted only on weekends, making it ideal for working professionals and college students.',
     level: 'Advanced',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'professional',
     subjectCategories: ['Aerospace Engineering', 'Space Technology'],
     image: '/image copy.png',
@@ -821,6 +831,7 @@ export const SCHOOL_PROGRAMS: Program[] = [
     description:
       'An engaging introduction to satellite technology designed for young learners. Students explore how CubeSats are built, launched and operated, then design and build their own model CubeSat with guidance from mentors.',
     level: 'Beginner',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'school',
     subjectCategories: ['Space Technology'],
     image:
@@ -919,6 +930,7 @@ export const SCHOOL_PROGRAMS: Program[] = [
     description:
       'An exciting introduction to drone technology for school students. Learn how drones fly, explore their components, and program simple autonomous missions while understanding drone safety and applications.',
     level: 'Beginner',
+    durations: ['3 Days', '15 Days', '4 Weeks', '8 Weeks', '12 Weeks'],
     learnerCategory: 'school',
     subjectCategories: ['UAV & Drones', 'Robotics'],
     image:
