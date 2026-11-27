@@ -76,12 +76,15 @@ export function WhatWeOffer() {
           <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-600/10 px-4 py-1.5 text-sm text-blue-300">
             What We Offer
           </div>
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Explore Aerospace Learning, Innovation &amp; Institutional Programs
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-slate-400">
-            Explore our range of aerospace learning, innovation, training, and institutional solutions.
-          </p>
+         <h2 className="text-3xl font-bold text-white sm:text-4xl">
+  Aerospace &amp; Space Technology Programs for Students and Institutions
+</h2>
+<p className="mt-4 max-w-2xl mx-auto text-slate-400">
+  From aerospace engineering and space technology training to STEM workshops,
+  faculty development and institutional space lab solutions, Aeroin EduTech
+  helps students and educational institutions explore, learn and build
+  practical skills in emerging technologies.
+</p>
         </div>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
