@@ -19,8 +19,8 @@ export interface CurriculumModule {
 export interface Program {
   slug: string;
   name: string;
+  duration?: string;
   shortDescription: string;
-  description: string;
   level: ProgramLevel;
   learnerCategory: LearnerCategory;
   subjectCategories: SubjectCategory[];
