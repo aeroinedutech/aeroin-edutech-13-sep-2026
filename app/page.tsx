@@ -152,8 +152,8 @@ export default function Home() {
           <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
             <div className="max-w-3xl animate-fade-in-up">
               <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-5xl">
-                Empowering Space EduTech
-              </h1>
+  Aerospace, Space Technology & STEM Education
+</h1>
               <p className="mt-6 text-lg text-slate-300">
                Aeroin EduTech delivers practical aerospace, space technology and STEM education for students, schools and colleges. Through hands-on training, technical programs, research opportunities, workshops and institutional collaborations, we help learners and educational institutions develop skills in aerospace engineering, satellite technology, robotics and emerging technologies.
               </p>
