@@ -8,7 +8,10 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://aeroinedutech.in'),
-  title: 'Aeroin EduTech | Space Technology & Aerospace Programs',
+  title: {
+  default: 'Aeroin EduTech | Aerospace, Space Technology & STEM Education',
+  template: '%s | Aeroin EduTech',
+},
   description:
     'Learn space technology, aerospace engineering, AI, robotics, CubeSat technology, rocket propulsion, Earth observation and planetary exploration with Aeroin EduTech. Programs from free foundation sessions to 3-month Research Internships.',
   keywords: [
