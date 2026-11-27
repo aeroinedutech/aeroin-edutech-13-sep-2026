@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   template: '%s | Aeroin EduTech',
 },
   description:
-    'Learn space technology, aerospace engineering, AI, robotics, CubeSat technology, rocket propulsion, Earth observation and planetary exploration with Aeroin EduTech. Programs from free foundation sessions to 3-month Research Internships.',
+    description:
+  'Explore aerospace engineering, space technology, AI, robotics and satellite systems through practical learning programs, school STEM education and research internships at Aeroin EduTech.',
   keywords: [
     'space technology',
     'aerospace engineering',
